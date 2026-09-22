@@ -23,11 +23,11 @@
 <meta property="og:url" id="ogUrl" content="https://onlystaff.pl/ru/">
 <meta property="og:image" content="https://onlystaff.pl/assets/og-image.jpg"><!-- временная заглушка в цветах сайта, замените на брендовую когда будет готова -->
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- Unbounded tylko dla logo (subset: litery logotypu) -->
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&text=onlystaf&display=swap" rel="stylesheet">
+<!-- Czcionki Google (Inter + Unbounded) NIE są ładowane tutaj statycznie: wczytujemy je
+     dynamicznie z JS (funkcja loadGoogleFonts) i tylko po zgodzie na cookies (banner
+     na dole strony). Do momentu zgody / przy odmowie przeglądarka używa czcionek
+     systemowych zdefiniowanych jako fallback w --font i --logo poniżej — wygląd
+     strony się nie psuje, po prostu font jest nieco inny. -->
 <script type="application/ld+json" id="ld"></script>
 <style>
 /* =====================================================================
@@ -570,6 +570,19 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
   .aside{position:static}
   .lead-grid{gap:var(--s6)}
   .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:var(--s2) var(--gutter) calc(var(--s2) + env(safe-area-inset-bottom,0px));background:rgba(245,245,242,.9);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-top:1px solid var(--border);transform:translateY(110%);visibility:hidden;transition:transform 220ms var(--ease),visibility 220ms}
+
+/* =====================================================================
+   COOKIE CONSENT
+   ===================================================================== */
+.cookiebar{position:fixed;left:0;right:0;bottom:0;z-index:200;display:flex;justify-content:center;padding:var(--s4) var(--gutter) calc(var(--s4) + env(safe-area-inset-bottom,0px));transform:translateY(110%);opacity:0;visibility:hidden;transition:transform 260ms var(--ease),opacity 260ms var(--ease),visibility 260ms}
+.cookiebar.show{transform:translateY(0);opacity:1;visibility:visible}
+.cookiebar-in{width:100%;max-width:720px;background:var(--surface);border:1px solid var(--border-strong);border-radius:var(--r-lg,16px);box-shadow:0 12px 40px rgba(16,24,32,.16);padding:var(--s5);display:flex;flex-direction:column;gap:var(--s4)}
+@media (min-width:640px){.cookiebar-in{flex-direction:row;align-items:center;gap:var(--s5)}}
+.cookiebar-txt{font-size:14px;line-height:1.5;color:var(--text-secondary)}
+.cookiebar-txt a{color:var(--accent);text-decoration:underline}
+.cookiebar-actions{display:flex;gap:var(--s3);flex-wrap:wrap;flex:none}
+.cookiebar-actions .btn{padding:0 18px;min-height:44px;font-size:14px}
+.cookie-settings-link{background:none;border:0;padding:0;font:inherit;color:var(--text-tertiary);text-decoration:underline;cursor:pointer}
   .sticky.show{transform:none;visibility:visible}
   .sticky-in{display:flex;gap:var(--s2)}
   .sticky .btn-primary{flex:1}
@@ -656,6 +669,16 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
 </style>
 </head>
 <body>
+<!-- cookie consent: гейтит только загрузку Google Fonts, никакой аналитики/рекламы на сайте нет -->
+<div id="cookiebar" class="cookiebar" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="cookiebar-in">
+    <p class="cookiebar-txt" data-i18n="cookie.text">Używamy tylko technicznie niezbędnych danych. Za Państwa zgodą wczytamy też czcionki Google (Inter/Unbounded) — bez zgody strona użyje czcionek systemowych. <a href="#" id="cookiebarLink" data-i18n="cookie.link">Szczegóły</a>.</p>
+    <div class="cookiebar-actions">
+      <button type="button" id="cookieReject" class="btn btn-secondary" data-i18n="cookie.reject">Tylko niezbędne</button>
+      <button type="button" id="cookieAccept" class="btn btn-primary" data-i18n="cookie.accept">Akceptuję</button>
+    </div>
+  </div>
+</div>
 <!-- icon sprite (outline, 1.75 stroke) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
@@ -906,7 +929,6 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
 </section>
 
 <!-- ABOUT -->
-<!-- TODO PRODUCTION: potwierdź, że poniższy tekst odpowiada realnemu doświadczeniu firmy. -->
 <section id="o-nas">
   <div class="wrap about-grid">
     <h2 data-i18n="about.h">Rekrutujemy do branży, którą znamy z praktyki.</h2>
@@ -1093,6 +1115,7 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
           <li><a href="#" id="lnkImp" hidden data-i18n="ft.imp">Impressum / Dane firmy</a></li>
           <li><a href="#" id="lnkPriv" hidden data-i18n="ft.priv">Polityka prywatności</a></li>
           <li><a href="#" id="lnkCook" hidden data-i18n="ft.cookies">Cookies</a></li>
+          <li><button type="button" id="cookieSettingsBtn" class="cookie-settings-link" data-i18n="cookie.settings">Ustawienia cookies</button></li>
         </ul>
       </div>
     </div>
@@ -1263,6 +1286,11 @@ pl:{
  'ft.tag':'Rekrutacja fachowców budowlanych i technicznych do projektów w Niemczech, Holandii i Belgii.',
  'ft.contact':'Kontakt','ft.phone':'Telefon','ft.company':'Dane firmy',
  'ft.imp':'Impressum / Dane firmy','ft.priv':'Polityka prywatności','ft.cookies':'Cookies',
+ 'cookie.text':'Używamy tylko technicznie niezbędnych danych (np. zapamiętanie wybranego języka). Za Państwa zgodą wczytamy też czcionki Google (Inter/Unbounded) — bez zgody strona użyje czcionek systemowych, a do Google nic nie zostanie wysłane.',
+ 'cookie.link':'Szczegóły',
+ 'cookie.reject':'Tylko niezbędne',
+ 'cookie.accept':'Akceptuję',
+ 'cookie.settings':'Ustawienia cookies',
  'svc':'Rekrutacja pracowników budowlanych i technicznych',
  'wa.msg':'Dzień dobry, szukam pracowników na projekt.',
  'wa.msgForm':'Dzień dobry, wysłałem zapotrzebowanie przez stronę ({s}). Chcę dopisać szczegóły.'
@@ -1356,6 +1384,11 @@ ru:{
  'ft.tag':'Подбор строительных и технических специалистов на проекты в Германии, Нидерландах и Бельгии.',
  'ft.contact':'Контакты','ft.phone':'Телефон','ft.company':'Данные компании',
  'ft.imp':'Impressum / Данные компании','ft.priv':'Политика конфиденциальности','ft.cookies':'Cookies',
+ 'cookie.text':'Мы используем только технически необходимые данные (например, чтобы запомнить выбранный язык). С вашего согласия мы также загрузим шрифты Google (Inter/Unbounded) — без согласия сайт использует системные шрифты, и к Google ничего не отправляется.',
+ 'cookie.link':'Подробнее',
+ 'cookie.reject':'Только необходимые',
+ 'cookie.accept':'Принимаю',
+ 'cookie.settings':'Настройки cookie',
  'svc':'Подбор строительных и технических специалистов',
  'wa.msg':'Здравствуйте, ищу работников на объект.',
  'wa.msgForm':'Здравствуйте, я отправил заявку через сайт ({s}). Хочу добавить детали.'
@@ -1380,6 +1413,50 @@ const ATTR = (() => {
   try { sessionStorage.setItem('os_attr', JSON.stringify(o)); } catch(e){}
   return o;
 })();
+
+/* ================= COOKIE CONSENT ================= */
+const COOKIE_KEY = 'os_cookie_consent'; // 'accepted' | 'rejected'
+let fontsLoaded = false;
+function loadGoogleFonts(){
+  if (fontsLoaded) return;
+  fontsLoaded = true;
+  const pre1 = document.createElement('link'); pre1.rel = 'preconnect'; pre1.href = 'https://fonts.googleapis.com';
+  const pre2 = document.createElement('link'); pre2.rel = 'preconnect'; pre2.href = 'https://fonts.gstatic.com'; pre2.crossOrigin = 'anonymous';
+  const inter = document.createElement('link'); inter.rel = 'stylesheet'; inter.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+  const unb = document.createElement('link'); unb.rel = 'stylesheet'; unb.href = 'https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&text=onlystaf&display=swap';
+  document.head.append(pre1, pre2, inter, unb);
+}
+function showCookieBar(){
+  const bar = $('#cookiebar');
+  if (!bar) return;
+  bar.hidden = false;
+  requestAnimationFrame(() => requestAnimationFrame(() => bar.classList.add('show')));
+}
+function hideCookieBar(){
+  const bar = $('#cookiebar');
+  if (!bar) return;
+  bar.classList.remove('show');
+  setTimeout(() => { bar.hidden = true; }, 280);
+}
+function initCookieConsent(){
+  const link = $('#cookiebarLink');
+  if (link) link.href = CONFIG.cookiesUrl || '/privacy.html#cookies';
+  let consent = null;
+  try { consent = localStorage.getItem(COOKIE_KEY); } catch(e){}
+  if (consent === 'accepted') { loadGoogleFonts(); }
+  else if (consent === 'rejected') { /* system fonts stay, nothing to load */ }
+  else { showCookieBar(); }
+  $('#cookieAccept')?.addEventListener('click', () => {
+    try { localStorage.setItem(COOKIE_KEY, 'accepted'); } catch(e){}
+    loadGoogleFonts();
+    hideCookieBar();
+  });
+  $('#cookieReject')?.addEventListener('click', () => {
+    try { localStorage.setItem(COOKIE_KEY, 'rejected'); } catch(e){}
+    hideCookieBar();
+  });
+  $('#cookieSettingsBtn')?.addEventListener('click', () => { showCookieBar(); });
+}
 
 /* ================= LANGUAGE ================= */
 function initLang(){
@@ -1720,6 +1797,7 @@ form.addEventListener('submit', async e => {
 /* ================= INIT ================= */
 $('#yr').textContent = new Date().getFullYear();
 initLang();
+initCookieConsent();
 show(1);
 if (matchMedia('(min-width:900px)').matches) $('#kalkulator').open = true;
 </script>
