@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pracownicy budowlani do Niemiec, Holandii i Belgii | OnlyStaff</title>
+<meta name="description" content="Rekrutacja fachowców budowlanych i technicznych pod konkretne projekty w Niemczech, Holandii i Belgii. Jednorazowa opłata za rekrutację, bez stałej marży godzinowej OnlyStaff.">
+<meta name="theme-color" content="#F5F5F2">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<!-- Архитектура: один и тот же файл раздаётся под /pl/ и /ru/ (напр. /pl/index.html и /ru/index.html).
+     Для /ru/ лучше сгенерировать копию с lang="ru" и русскими meta в <head> (шаг сборки). -->
+<link rel="canonical" id="canonical" href="https://onlystaff.pl/pl/">
+<link rel="alternate" hreflang="pl" id="hlPl" href="https://onlystaff.pl/pl/">
+<link rel="alternate" hreflang="ru" id="hlRu" href="https://onlystaff.pl/ru/">
+<link rel="alternate" hreflang="x-default" id="hlDef" href="https://onlystaff.pl/pl/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OnlyStaff">
+<meta property="og:title" id="ogTitle" content="Masz obiekt. Brakuje ludzi? | OnlyStaff">
+<meta property="og:description" id="ogDesc" content="Fachowcy budowlani i techniczni pod konkretne projekty w Niemczech, Holandii i Belgii.">
+<meta property="og:locale" id="ogLocale" content="pl_PL">
+<meta property="og:locale:alternate" id="ogLocaleAlt" content="ru_RU">
+<meta property="og:url" id="ogUrl" content="https://onlystaff.pl/pl/">
+<meta property="og:image" content="https://onlystaff.pl/assets/og-image.jpg"><!-- временная заглушка в цветах сайта, замените на брендовую когда будет готова -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Unbounded tylko dla logo (subset: litery logotypu) -->
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&text=onlystaf&display=swap" rel="stylesheet">
+<script type="application/ld+json" id="ld"></script>
+<style>
+/* =====================================================================
+   DESIGN SYSTEM
+   ===================================================================== */
+:root{
+  color-scheme:light;
+  /* colour */
+  --background:#F5F5F2;
+  --surface:#FFFFFF;
+  --surface-secondary:#EEEFEB;
+  --text-primary:#101820;
+  --text-secondary:#525C67;
+  --text-tertiary:#7E8791;
+  --border:#E3E4DF;
+  --border-strong:#CDD0C9;
+  --accent:#2445D6;
+  --accent-hover:#1E3BC2;
+  --accent-press:#1831A6;
+  --accent-soft:#EEF1FD;
+  --success:#1E7A4C;
+  --success-ink:#0E4B2E;
+  --success-soft:#EDF6F0;
+  --success-border:#CFE5D7;
+  --error:#BF3528;
+  --error-soft:#FCEEEC;
+  --dark:#0E151D;
+  --dark-2:#18222D;
+  --dark-ink:#EEF1F4;
+  --dark-muted:#98A2AC;
+  --dark-line:rgba(255,255,255,.09);
+  /* spacing scale */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px;
+  /* radius */
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+  /* sizing */
+  --h-control:52px; --h-touch:44px;
+  /* elevation */
+  --shadow-xs:0 1px 2px rgba(16,24,32,.07);
+  --shadow-sm:0 1px 2px rgba(16,24,32,.04),0 4px 12px -2px rgba(16,24,32,.07);
+  --shadow-md:0 1px 2px rgba(16,24,32,.04),0 20px 44px -16px rgba(16,24,32,.16);
+  /* motion */
+  --ease:cubic-bezier(.2,.7,.2,1); --t:180ms;
+  /* type */
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --logo:"Unbounded","Arial Black","Helvetica Neue",Arial,sans-serif;
+  /* layout */
+  --wrap:1200px; --gutter:16px;
+  interpolate-size:allow-keywords;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (min-width:641px){:root{--gutter:24px}}
+@media (min-width:1280px){:root{--gutter:32px}}
+
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--background);color:var(--text-primary);font-family:var(--font);font-size:16px;line-height:1.6;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-feature-settings:"cv11","ss01";text-rendering:optimizeLegibility}
+@media (min-width:900px){body{font-size:17px}}
+img,svg{max-width:100%}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+button{-webkit-tap-highlight-color:transparent}
+p{margin:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:var(--r-sm)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:calc(var(--wrap) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
+.i{width:20px;height:20px;flex:none;display:inline-block;vertical-align:middle}
+.i-sm{width:16px;height:16px}
+
+/* type scale */
+h1,h2,h3{margin:0;font-family:var(--font);color:var(--text-primary);text-wrap:balance}
+h1{font-size:clamp(40px,calc(4.6vw + 22px),76px);font-weight:800;letter-spacing:-.035em;line-height:1.0}
+h1 span,h2 span{display:block}
+h2{font-size:clamp(28px,calc(1.6vw + 22px),44px);font-weight:700;letter-spacing:-.028em;line-height:1.1;max-width:20ch}
+h3{font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:1.35}
+.lead{font-size:17px;line-height:1.55;color:var(--text-secondary);max-width:56ch;margin-top:var(--s4)}
+@media (min-width:900px){.lead{font-size:19px}}
+.muted{color:var(--text-secondary)}
+.micro{font-size:13px;line-height:1.45;color:var(--text-tertiary)}
+
+/* sections */
+section{padding:var(--s8) 0}
+@media (min-width:900px){section{padding:var(--s9) 0}}
+.bg-surface{background:var(--surface)}
+.sec-head{margin-bottom:var(--s6)}
+@media (min-width:900px){.sec-head{margin-bottom:var(--s7)}}
+
+/* buttons */
+.btn{--bh:var(--h-control);display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:var(--bh);padding:0 22px;border-radius:var(--r-md);border:1px solid transparent;font-weight:700;font-size:15px;letter-spacing:-.005em;line-height:1.2;text-decoration:none;cursor:pointer;user-select:none;transition:background var(--t) var(--ease),border-color var(--t) var(--ease),color var(--t) var(--ease),box-shadow var(--t) var(--ease),transform 120ms var(--ease)}
+.btn:active{transform:scale(.985)}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.btn-lg{--bh:56px;padding:0 28px;font-size:16px}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 1px 2px rgba(20,40,160,.25),inset 0 1px 0 rgba(255,255,255,.12)}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-primary:active{background:var(--accent-press)}
+.btn-secondary{background:var(--surface);color:var(--text-primary);border-color:var(--border-strong);box-shadow:var(--shadow-xs)}
+.btn-secondary:hover{border-color:#B7BBB3;background:#FAFAF8}
+.btn-secondary:active{background:var(--surface-secondary)}
+.btn-ghost{background:transparent;color:var(--text-primary)}
+.btn-ghost:hover{background:var(--surface-secondary)}
+.btn-icon{padding:0;width:var(--bh)}
+.btn .i-wa{color:#1FA855}
+.btn-dark-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.22)}
+.btn-dark-line:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.34)}
+.btn-dark-line .i-wa{color:#4ED282}
+.cta-row{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+
+/* =====================================================================
+   HEADER
+   ===================================================================== */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(245,245,242,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color var(--t) var(--ease)}
+.hdr.scrolled{border-bottom-color:var(--border)}
+.hdr-in{display:flex;align-items:center;gap:var(--s5);height:64px}
+.logo{font-family:var(--logo);font-weight:800;font-size:18px;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:var(--s2);min-height:var(--h-touch)}
+.logo i{width:11px;height:11px;background:var(--accent);border-radius:3px;display:inline-block}
+.logo b{font-weight:500}
+.nav{display:flex;align-items:center;gap:var(--s1);margin-left:auto}
+.nav a{text-decoration:none;color:var(--text-secondary);font-weight:500;font-size:15px;padding:0 var(--s3);min-height:var(--h-touch);display:inline-flex;align-items:center;border-radius:var(--r-sm);transition:color var(--t),background var(--t)}
+.nav a:hover{color:var(--text-primary);background:rgba(16,24,32,.04)}
+.nav .nav-cta{display:none}
+.hdr-right{display:flex;align-items:center;gap:var(--s3)}
+.seg-lang{display:flex;background:var(--surface-secondary);border-radius:var(--r-md);height:var(--h-touch)}
+.seg-lang button{position:relative;border:0;background:none;width:var(--h-touch);height:var(--h-touch);font-weight:600;font-size:13px;letter-spacing:.02em;cursor:pointer;color:var(--text-tertiary);transition:color var(--t)}
+.seg-lang button::before{content:"";position:absolute;inset:4px;border-radius:9px;background:transparent;transition:background var(--t),box-shadow var(--t)}
+.seg-lang button span{position:relative}
+.seg-lang button:hover{color:var(--text-primary)}
+.seg-lang button[aria-pressed="true"]{color:var(--text-primary)}
+.seg-lang button[aria-pressed="true"]::before{background:var(--surface);box-shadow:var(--shadow-xs)}
+.hdr .btn{--bh:44px;padding:0 18px;font-size:14px}
+.menu-btn{display:none;width:var(--h-touch);height:var(--h-touch);border:0;border-radius:var(--r-md);background:var(--surface-secondary);cursor:pointer;align-items:center;justify-content:center;color:var(--text-primary)}
+.menu-btn .i{width:20px;height:20px}
+.menu-btn[aria-expanded="true"] .i-open,.menu-btn:not([aria-expanded="true"]) .i-close{display:none}
+
+/* =====================================================================
+   HERO
+   ===================================================================== */
+.hero{padding:var(--s5) 0 var(--s7)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:var(--s8);align-items:center}
+.hero-lead{margin-top:var(--s5);font-size:18px;line-height:1.55;color:var(--text-secondary);max-width:38ch}
+.hero-lead strong{color:var(--text-primary);font-weight:600}
+.hero-price{margin-top:var(--s5);display:inline-flex;align-items:flex-start;gap:var(--s3);padding:var(--s3) var(--s4);background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);font-size:15px;line-height:1.45;color:var(--text-secondary);max-width:480px}
+.hero-price .i{color:var(--accent);margin-top:1px}
+.hero-price strong{color:var(--text-primary);font-weight:600}
+.hero .cta-row{margin-top:var(--s6)}
+.hero-micro{margin-top:var(--s4);display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5);list-style:none;padding:0}
+.hero-micro li{display:inline-flex;align-items:center;gap:6px}
+.hero-micro .i{width:15px;height:15px;color:var(--text-tertiary)}
+
+.board{background:var(--dark);color:var(--dark-ink);border-radius:20px;padding:var(--s4);box-shadow:var(--shadow-md)}
+.board-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);padding:var(--s1) var(--s1) var(--s3)}
+.board-top b{font-weight:600;font-size:13px;letter-spacing:.005em}
+.board-top span{color:var(--dark-muted);font-size:12px;font-weight:500;letter-spacing:.04em}
+.reqs{display:grid;gap:var(--s2)}
+.req{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:1fr auto;align-items:center;gap:var(--s3);padding:14px var(--s4);border-radius:var(--r-md);background:var(--dark-2);border:1px solid var(--dark-line);transition:background var(--t) var(--ease),border-color var(--t) var(--ease),transform 120ms var(--ease);opacity:0;animation:rin .45s var(--ease) forwards}
+.req:nth-child(2){animation-delay:.08s}.req:nth-child(3){animation-delay:.16s}
+@keyframes rin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.req:hover{background:#1D2833;border-color:rgba(255,255,255,.16)}
+.req:active{transform:scale(.99)}
+.req:focus-visible{outline:2px solid #7E97FF;outline-offset:2px}
+.req-ex{display:block;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dark-muted)}
+.req-role{display:block;margin-top:2px;font-size:16px;font-weight:600;letter-spacing:-.01em;color:#fff}
+.req-meta{display:flex;align-items:center;gap:6px;margin-top:4px;font-size:13px;color:var(--dark-muted)}
+.req-side{display:flex;align-items:center;gap:var(--s2)}
+.req-tag{font-size:12px;font-weight:600;padding:5px 9px;border-radius:var(--r-sm);background:rgba(255,255,255,.07);color:var(--dark-ink);white-space:nowrap}
+.req-go{width:16px;height:16px;color:var(--dark-muted);transition:transform var(--t) var(--ease),color var(--t)}
+.req:hover .req-go{transform:translateX(2px);color:#fff}
+.board-hint{margin-top:var(--s3);padding:0 var(--s1);font-size:12px;color:var(--dark-muted)}
+.flag{display:inline-block;width:18px;height:12px;border-radius:2px;flex:none;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.f-de{background:linear-gradient(#000 0 33.3%,#DD0000 33.3% 66.6%,#FFCE00 66.6%)}
+.f-nl{background:linear-gradient(#AE1C28 0 33.3%,#fff 33.3% 66.6%,#21468B 66.6%)}
+.f-be{background:linear-gradient(90deg,#000 0 33.3%,#FDDA24 33.3% 66.6%,#EF3340 66.6%)}
+
+/* =====================================================================
+   CONTEXT STRIP
+   ===================================================================== */
+.ctx{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.ctx ul{list-style:none;margin:0 auto;display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;gap:var(--s4) var(--s5);padding-top:var(--s4);padding-bottom:var(--s4)}
+.ctx li{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--text-primary);line-height:1.35}
+.ctx .i{width:18px;height:18px;color:var(--text-tertiary)}
+.ctx .flags{display:inline-flex;gap:3px}
+.ctx .flags .flag{width:16px;height:11px}
+
+/* =====================================================================
+   PROBLEM
+   ===================================================================== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:start}
+.pain{list-style:none;margin:0;padding:0}
+.pain li{display:flex;gap:var(--s3);padding:var(--s4) 0;border-bottom:1px solid var(--border);font-size:17px;line-height:1.45}
+.pain li:first-child{padding-top:0}
+.pain .i{color:var(--error);margin-top:1px}
+.pain-close{margin-top:var(--s5);font-size:18px;font-weight:600;letter-spacing:-.01em;line-height:1.4}
+.prob .cta-row{margin-top:var(--s5)}
+
+/* =====================================================================
+   SPECIALTIES
+   ===================================================================== */
+.sg{display:grid;grid-template-columns:200px 1fr;gap:var(--s3) var(--s5);padding:var(--s5) 0;border-top:1px solid var(--border)}
+.sg:last-child{border-bottom:1px solid var(--border)}
+.sg h3{font-size:14px;font-weight:600;color:var(--text-secondary);padding-top:11px}
+.sg-chips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.chip{display:inline-flex;align-items:center;gap:var(--s2);min-height:var(--h-touch);padding:var(--s2) 14px var(--s2) var(--s3);border-radius:10px;border:1px solid var(--border);background:var(--surface);cursor:pointer;font-size:15px;font-weight:500;line-height:1.25;text-align:left;color:var(--text-primary);transition:background var(--t) var(--ease),border-color var(--t) var(--ease),color var(--t) var(--ease),transform 120ms var(--ease)}
+.chip .i{width:16px;height:16px;color:var(--text-tertiary);transition:color var(--t)}
+.chip small{font-size:12.5px;color:var(--text-tertiary);font-weight:500}
+.chip:hover{border-color:var(--border-strong);background:#FAFAF8}
+.chip:active{transform:scale(.98);background:var(--surface-secondary)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-press)}
+.chip[aria-pressed="true"] .i,.chip[aria-pressed="true"] small{color:var(--accent)}
+.chip .ic-check{display:none}
+.chip[aria-pressed="true"] .ic-check{display:inline-block}
+.chip[aria-pressed="true"] .ic-plus{display:none}
+.spec-sel{position:sticky;bottom:var(--s4);z-index:5;margin-top:var(--s5);display:flex;align-items:center;justify-content:space-between;gap:var(--s3) var(--s5);flex-wrap:wrap;padding:var(--s2) var(--s2) var(--s2) var(--s5);border-radius:14px;background:var(--dark);color:#fff;box-shadow:var(--shadow-md)}
+.spec-sel p{font-size:15px;font-weight:500;flex:1;min-width:200px;padding:var(--s2) 0}
+.spec-miss{margin-top:var(--s6);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s4) var(--s5)}
+.spec-miss b{display:block;font-size:16px;font-weight:600}
+.spec-miss span{display:block;color:var(--text-secondary);font-size:15px;margin-top:2px}
+
+/* =====================================================================
+   HOW IT WORKS
+   ===================================================================== */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6)}
+.steps li{position:relative}
+.step-dot{position:relative;z-index:1;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--surface);border:1px solid var(--border-strong);font-size:12px;font-weight:700;color:var(--text-primary);font-variant-numeric:tabular-nums}
+.steps li:first-child .step-dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:16px;left:44px;right:calc(var(--s6)*-1 + 12px);height:1px;background:var(--border-strong)}
+.steps h3{margin-top:var(--s4);font-size:18px}
+.steps p{margin-top:var(--s2);color:var(--text-secondary);font-size:15.5px;max-width:34ch}
+.how-foot{margin-top:var(--s7);display:flex;flex-wrap:wrap;align-items:center;gap:var(--s4) var(--s5)}
+.note-i{display:inline-flex;align-items:center;gap:var(--s2);font-size:14px;color:var(--text-secondary)}
+.note-i .i{width:16px;height:16px;color:var(--text-tertiary)}
+
+/* =====================================================================
+   QUALIFICATION + PROFILE
+   ===================================================================== */
+.qual-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s8);align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:var(--s2);margin:var(--s5) 0 0;padding:0;list-style:none}
+.facts li{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 var(--s3) 0 10px;border-radius:var(--r-sm);background:var(--background);font-size:14px;font-weight:500;color:var(--text-primary)}
+.facts .i{width:15px;height:15px;color:var(--success)}
+.honest{margin-top:var(--s5);display:flex;gap:10px;font-size:14px;line-height:1.5;color:var(--text-secondary);max-width:54ch}
+.honest .i{width:18px;height:18px;color:var(--text-tertiary);margin-top:1px}
+.profile{background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow-md);padding:var(--s5);max-width:440px;justify-self:end;width:100%}
+.profile-h{display:flex;align-items:center;gap:var(--s3)}
+.avatar{width:44px;height:44px;border-radius:var(--r-md);background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.profile-h div{flex:1;min-width:0}
+.profile-h b{display:block;font-size:18px;font-weight:700;letter-spacing:-.015em;line-height:1.25}
+.profile-h span{display:block;font-size:14px;color:var(--text-secondary)}
+.tag{display:inline-block;margin-bottom:var(--s4);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-tertiary);background:var(--surface-secondary);padding:4px 8px;border-radius:6px;align-self:flex-start;white-space:nowrap}
+.profile dl{margin:var(--s5) 0 0;padding:0}
+.profile dl div{display:flex;justify-content:space-between;gap:var(--s4);padding:11px 0;border-top:1px solid var(--border);font-size:14.5px}
+.profile dt{color:var(--text-secondary)}
+.profile dd{margin:0;font-weight:600;text-align:right}
+
+/* =====================================================================
+   PAYMENT
+   ===================================================================== */
+.pay h2 span+span{color:var(--text-tertiary)}
+.pay-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:var(--s8);align-items:start}
+.model{display:grid;grid-template-columns:1fr auto 1.25fr;align-items:stretch;gap:var(--s3)}
+.model-a,.model-b{border-radius:var(--r-lg);padding:var(--s5)}
+.model-a>div{display:contents}
+.model-a{background:var(--surface);border:1px solid var(--border);display:flex;flex-direction:column;justify-content:center}
+.model-num{font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--text-primary)}
+.model-a b{display:block;margin-top:var(--s3);font-size:16px;font-weight:600;line-height:1.3}
+.model-a span.s{display:block;font-size:14px;color:var(--text-secondary)}
+.model-arrow{align-self:center;width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;color:var(--text-tertiary)}
+.model-b{background:var(--success-soft);border:1px solid var(--success-border);color:var(--success-ink);position:relative}
+.model-b .ok{position:absolute;top:var(--s4);right:var(--s4);width:24px;height:24px;border-radius:50%;background:var(--success);color:#fff;display:grid;place-items:center}
+.model-b .ok .i{width:14px;height:14px}
+.zero{display:block;font-size:clamp(44px,calc(2.4vw + 30px),60px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--success-ink);font-variant-numeric:tabular-nums}
+.model-b b{display:block;margin-top:var(--s3);font-size:16px;font-weight:600;line-height:1.3}
+.model-b span.s{display:block;font-size:14px;color:var(--success)}
+.pay-p{margin-top:var(--s5);color:var(--text-secondary);max-width:62ch}
+.pay-r .pay-p{margin-top:var(--s4)}
+
+.calc{margin-top:var(--s4);background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg)}
+.calc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:var(--s3);min-height:var(--h-control);padding:0 var(--s4);font-size:15px;font-weight:600;border-radius:var(--r-lg)}
+.calc summary::-webkit-details-marker{display:none}
+.calc summary .i{color:var(--text-tertiary)}
+.calc summary .chev{margin-left:auto;width:18px;height:18px;transition:transform var(--t) var(--ease)}
+.calc[open] summary .chev{transform:rotate(180deg)}
+.calc-body{padding:0 var(--s4) var(--s4)}
+.calc-ctrls{display:flex;flex-wrap:wrap;gap:var(--s4) var(--s5);align-items:flex-end;padding-top:var(--s2);border-top:1px solid var(--border)}
+.fld{padding-top:var(--s3)}
+.fld>label,.fld>.lbl{display:block;font-size:12.5px;font-weight:500;color:var(--text-secondary);margin-bottom:6px}
+.fld .lbl em{font-style:normal;color:var(--text-tertiary)}
+.stepper{display:inline-flex;align-items:center;height:var(--h-touch);border:1px solid var(--border-strong);border-radius:10px;background:var(--surface);overflow:hidden}
+.stepper button{width:40px;height:100%;border:0;background:none;cursor:pointer;display:grid;place-items:center;color:var(--text-secondary);transition:background var(--t),color var(--t)}
+.stepper button:hover{background:var(--surface-secondary);color:var(--text-primary)}
+.stepper button:active{background:#E4E5E0}
+.stepper .i{width:16px;height:16px}
+.stepper input{width:48px;height:100%;text-align:center;border:0;background:none;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;-moz-appearance:textfield;padding:0}
+.stepper input:focus{outline:none;background:var(--accent-soft)}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.segs{display:inline-flex;height:var(--h-touch);padding:3px;gap:2px;background:var(--surface-secondary);border-radius:10px}
+.segs label{position:relative;display:flex}
+.segs input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.segs span{display:flex;align-items:center;justify-content:center;min-width:52px;padding:0 10px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--text-secondary);transition:background var(--t),color var(--t),box-shadow var(--t)}
+.segs label:hover span{color:var(--text-primary)}
+.segs input:checked+span{background:var(--surface);color:var(--text-primary);box-shadow:var(--shadow-xs)}
+.segs input:focus-visible+span{outline:2px solid var(--accent);outline-offset:1px}
+.calc-out{margin-top:var(--s4);display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);padding:var(--s3) var(--s4);border-radius:var(--r-md);background:var(--background)}
+.calc-out small{display:block;font-size:12.5px;color:var(--text-secondary)}
+.calc-out output{display:block;font-size:20px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.disc{margin-top:var(--s3);font-size:12.5px;line-height:1.5;color:var(--text-tertiary)}
+
+/* =====================================================================
+   WHY
+   ===================================================================== */
+.why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s6)}
+.why li{border-top:1px solid var(--border-strong);padding-top:var(--s5)}
+.why .n{display:block;font-size:13px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.why h3{margin-top:var(--s3)}
+.why p{margin-top:var(--s2);color:var(--text-secondary);font-size:15.5px}
+
+/* =====================================================================
+   ABOUT
+   ===================================================================== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:start}
+.about-lead{font-size:clamp(19px,calc(.5vw + 16px),22px);line-height:1.5;font-weight:500;letter-spacing:-.01em;color:var(--text-primary)}
+.about-p{margin-top:var(--s4);color:var(--text-secondary)}
+.about-fig{margin:var(--s6) 0 0;border-radius:var(--r-xl);overflow:hidden;background:var(--surface-secondary)}
+.about-fig img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
+/* =====================================================================
+   FORM
+   ===================================================================== */
+.lead-sec{background:var(--surface-secondary)}
+.lead-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:var(--s7);align-items:start}
+.fcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--shadow-md);padding:var(--s6)}
+.fcard h2{font-size:clamp(24px,calc(.8vw + 20px),32px);max-width:none}
+.fcard .fl{margin-top:var(--s2);font-size:15px;line-height:1.5;color:var(--text-secondary);max-width:60ch}
+.prog{margin-top:var(--s5)}
+.prog-t{font-size:13px;font-weight:600;color:var(--text-secondary);font-variant-numeric:tabular-nums}
+.bar{margin-top:var(--s2);height:4px;border-radius:4px;background:var(--surface-secondary);overflow:hidden}
+.bar i{display:block;height:100%;width:25%;background:var(--accent);border-radius:4px;transition:width 260ms var(--ease)}
+.fstep{display:none;margin-top:var(--s5)}
+.fstep.on{display:block;animation:fin .22s var(--ease)}
+@keyframes fin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0}
+.q{display:block;font-size:19px;font-weight:700;letter-spacing:-.018em;line-height:1.3;margin-bottom:var(--s4)}
+.q:focus{outline:none}
+
+/* segmented selector (country, housing) */
+.segctl{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;background:var(--surface-secondary);border-radius:14px}
+.segctl label{position:relative;display:flex}
+.segctl input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer;z-index:1}
+.segctl span{flex:1;display:flex;align-items:center;justify-content:center;gap:var(--s2);min-height:48px;padding:0 var(--s2);border-radius:10px;font-size:15px;font-weight:500;color:var(--text-secondary);text-align:center;line-height:1.2;transition:background var(--t) var(--ease),color var(--t),box-shadow var(--t)}
+.segctl label:hover span{color:var(--text-primary)}
+.segctl input:checked+span{background:var(--surface);color:var(--text-primary);font-weight:600;box-shadow:var(--shadow-sm)}
+.segctl input:focus-visible+span{outline:2px solid var(--accent);outline-offset:1px}
+.segctl.sm{display:flex}
+.segctl.sm label{flex:1 1 auto}
+.segctl.sm span{min-height:36px;font-size:14px;white-space:nowrap;padding:0 var(--s3)}
+.segctl .flag{width:18px;height:12px}
+.segctl b{font-weight:inherit}
+
+/* inputs */
+.field{display:block}
+.field+.field,.grid2+.field,.field+.grid2,.grid2+.grid2{margin-top:var(--s4)}
+.field>.lab{display:flex;align-items:baseline;gap:6px;font-size:14px;font-weight:600;margin-bottom:var(--s2)}
+.field>.lab small{font-size:13px;font-weight:400;color:var(--text-tertiary)}
+.inp{width:100%;height:var(--h-control);padding:0 14px;border-radius:var(--r-md);border:1px solid var(--border-strong);background:var(--surface);font-size:16px;color:var(--text-primary);transition:border-color var(--t),box-shadow var(--t),background var(--t);-webkit-appearance:none;appearance:none}
+textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-height:1.5}
+.inp::placeholder{color:#A3A9AF}
+.inp:hover{border-color:#B7BBB3}
+.inp:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.inp[aria-invalid="true"]{border-color:var(--error);box-shadow:0 0 0 4px var(--error-soft)}
+.hint{display:block;margin-top:6px;font-size:13px;line-height:1.45;color:var(--text-tertiary)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);align-items:start}
+.grid2 .field+.field{margin-top:0}
+
+/* combobox */
+.combo{position:relative}
+.combo>.i{position:absolute;left:14px;top:16px;color:var(--text-tertiary);pointer-events:none}
+.combo .inp{padding-left:44px}
+.lbx{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:10;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow-md);max-height:288px;overflow:auto;padding:6px;display:none}
+.lbx.open{display:block}
+.lbx button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:var(--s3);text-align:left;border:0;background:none;min-height:var(--h-touch);padding:var(--s2) var(--s3);border-radius:var(--r-sm);cursor:pointer;font-size:15px;font-weight:500}
+.lbx button small{color:var(--text-tertiary);font-size:13px;font-weight:400;white-space:nowrap}
+.lbx button:hover,.lbx button.act{background:var(--surface-secondary)}
+.lbx button[data-custom] span{color:var(--accent)}
+.quick{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s3)}
+.quick button{display:inline-flex;align-items:center;gap:6px;min-height:var(--h-touch);padding:0 var(--s3) 0 10px;border-radius:10px;border:0;background:var(--surface-secondary);cursor:pointer;font-size:14px;font-weight:500;color:var(--text-primary);transition:background var(--t),transform 120ms}
+.quick button .i{width:15px;height:15px;color:var(--text-secondary)}
+.quick button:hover{background:#E4E5E0}
+.quick button:active{transform:scale(.97)}
+.roles{list-style:none;margin:var(--s4) 0 0;padding:0;border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.roles:empty{display:none}
+.roles li{display:flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s2) var(--s2) var(--s4);background:var(--surface)}
+.roles li+li{border-top:1px solid var(--border)}
+.rn{flex:1;min-width:0;font-size:15px;font-weight:600;line-height:1.3;overflow-wrap:break-word}
+.rn small{display:block;font-size:12.5px;font-weight:400;color:var(--text-tertiary)}
+.roles .stepper input{width:36px}
+.icon-btn{width:var(--h-touch);height:var(--h-touch);flex:none;border:0;background:none;border-radius:10px;cursor:pointer;display:grid;place-items:center;color:var(--text-tertiary);transition:background var(--t),color var(--t)}
+.icon-btn .i{width:18px;height:18px}
+.icon-btn:hover{background:var(--error-soft);color:var(--error)}
+
+/* choice chips (radio / checkbox) */
+.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2)}
+.choice{position:relative;display:flex}
+.choice input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.choice span{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:6px 10px;border-radius:var(--r-md);border:1px solid var(--border-strong);background:var(--surface);font-size:15px;font-weight:500;line-height:1.25;transition:background var(--t),border-color var(--t),color var(--t),box-shadow var(--t)}
+.choice:hover span{border-color:#B7BBB3}
+.choice input:checked+span{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-press);font-weight:600;box-shadow:inset 0 0 0 1px var(--accent)}
+.choice input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.choices.inline{display:flex;flex-wrap:wrap}
+.choices.inline .choice span{min-height:var(--h-touch);padding:0 14px;font-size:14px}
+.skip{margin-top:var(--s4);display:flex;gap:var(--s2);font-size:13.5px;line-height:1.45;color:var(--text-secondary)}
+.skip .i{width:16px;height:16px;color:var(--text-tertiary);margin-top:1px}
+
+/* settings group */
+.set{margin-top:var(--s4);border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.set>*+*{border-top:1px solid var(--border)}
+.set-block{padding:14px var(--s4)}
+.set-block legend{float:left;width:100%;font-size:15px;font-weight:500;margin-bottom:10px}
+.set-block legend+*{clear:both}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:56px;padding:6px var(--s4);cursor:pointer;font-size:15px;font-weight:500}
+.set-row.stack{flex-wrap:wrap;cursor:default}
+.set-row.stack .segctl{flex:0 1 auto}
+.switch{position:relative;flex:none;width:46px;height:28px;border-radius:14px;background:#CBCEC7;cursor:pointer;appearance:none;-webkit-appearance:none;margin:0;transition:background 200ms var(--ease)}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(16,24,32,.25);transition:transform 200ms var(--ease)}
+.switch:checked{background:var(--accent)}
+.switch:checked::after{transform:translateX(18px)}
+.switch:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:14px}
+.set-block+.field,.set+.field{margin-top:var(--s4)}
+
+/* consent */
+.consent{display:flex;gap:var(--s3);align-items:flex-start;margin-top:var(--s5);cursor:pointer;font-size:14px;line-height:1.5;color:var(--text-secondary);min-height:var(--h-touch)}
+.cbox{appearance:none;-webkit-appearance:none;flex:none;width:22px;height:22px;margin:0;border-radius:6px;border:1.5px solid var(--border-strong);background:var(--surface);display:grid;place-items:center;cursor:pointer;transition:background var(--t),border-color var(--t)}
+.cbox::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px);opacity:0}
+.cbox:checked{background:var(--accent);border-color:var(--accent)}
+.cbox:checked::after{opacity:1}
+.cbox[aria-invalid="true"]{border-color:var(--error);box-shadow:0 0 0 4px var(--error-soft)}
+.consent a{color:var(--text-primary);text-underline-offset:2px}
+
+/* errors / nav */
+.err{margin-top:var(--s4);display:flex;gap:var(--s2);align-items:flex-start;padding:10px var(--s3);border-radius:10px;background:var(--error-soft);color:var(--error);font-size:14px;font-weight:500;line-height:1.45}
+.err::before{content:"";flex:none;width:18px;height:18px;margin-top:1px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7.5v5.5M12 16.5h.01'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7.5v5.5M12 16.5h.01'/%3E%3C/svg%3E") center/contain no-repeat}
+.err:empty{display:none}
+.err-alt{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:var(--s2)}
+.fnav{display:flex;gap:var(--s3);margin-top:var(--s6);align-items:center}
+.fnav .grow{margin-left:auto;min-width:220px}
+.submit-note{margin-top:var(--s3);display:flex;align-items:center;justify-content:flex-end;gap:6px}
+.submit-note .i{width:14px;height:14px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.done{padding:var(--s2) 0}
+.done-ic{width:52px;height:52px;border-radius:50%;background:var(--success-soft);color:var(--success);display:grid;place-items:center;margin-bottom:var(--s5)}
+.done-ic .i{width:26px;height:26px}
+.done h3{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.done p{margin-top:var(--s2);color:var(--text-secondary);max-width:46ch}
+.done .btn{margin-top:var(--s5)}
+.done:focus{outline:none}
+
+/* aside */
+.aside{position:sticky;top:96px}
+.aside h3{font-size:15px}
+.next{list-style:none;margin:var(--s4) 0 0;padding:0;counter-reset:n}
+.next li{position:relative;display:flex;gap:var(--s3);align-items:center;padding:0 0 var(--s4);font-size:15px;counter-increment:n}
+.next li::before{content:counter(n);flex:none;width:26px;height:26px;border-radius:50%;background:var(--surface);border:1px solid var(--border-strong);display:grid;place-items:center;font-size:12px;font-weight:700;position:relative;z-index:1}
+.next li:not(:last-child)::after{content:"";position:absolute;left:13px;top:26px;bottom:0;width:1px;background:var(--border-strong)}
+.talk{margin-top:var(--s5);padding-top:var(--s5);border-top:1px solid var(--border-strong)}
+.talk .btn{width:100%;margin-top:var(--s3)}
+
+/* =====================================================================
+   FAQ
+   ===================================================================== */
+.faq-grid{display:grid;grid-template-columns:1fr 1.7fr;gap:var(--s8)}
+.faq-list{border-top:1px solid var(--border)}
+.faq-list details{border-bottom:1px solid var(--border)}
+.faq-list summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:60px;padding:var(--s3) 0;font-size:16.5px;font-weight:600;letter-spacing:-.01em;line-height:1.4;border-radius:var(--r-sm)}
+.faq-list summary::-webkit-details-marker{display:none}
+.pm{position:relative;flex:none;width:28px;height:28px;border-radius:50%;background:var(--surface-secondary);transition:transform 220ms var(--ease),background var(--t)}
+.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.75px;background:var(--text-primary);border-radius:2px;transform:translate(-50%,-50%)}
+.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-list summary:hover .pm{background:#E4E5E0}
+.faq-list details[open] .pm{transform:rotate(45deg)}
+.faq-list details p{padding:0 var(--s7) var(--s5) 0;color:var(--text-secondary);max-width:64ch}
+.faq-list details::details-content{height:0;overflow:clip;transition:height 220ms var(--ease),content-visibility 220ms allow-discrete}
+.faq-list details[open]::details-content{height:auto}
+
+/* =====================================================================
+   FINAL CTA
+   ===================================================================== */
+.final{background:var(--dark);color:var(--dark-ink)}
+.final h2{color:#fff;font-size:clamp(32px,calc(2.6vw + 22px),56px);font-weight:800;letter-spacing:-.035em;line-height:1.04;max-width:18ch}
+.final h2 span+span{color:var(--dark-muted)}
+.final p{margin-top:var(--s4);font-size:18px;color:var(--dark-muted);max-width:44ch}
+.final .cta-row{margin-top:var(--s6)}
+
+/* =====================================================================
+   FOOTER
+   ===================================================================== */
+.ftr{padding:var(--s7) 0 var(--s5);font-size:14px;color:var(--text-secondary)}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s6)}
+.ftr .logo{min-height:0}
+.ftr-tag{margin-top:var(--s3);max-width:34ch}
+.ftr h3{font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:var(--s2)}
+.ftr ul{list-style:none;margin:0;padding:0}
+.ftr ul a{display:inline-flex;align-items:center;min-height:var(--h-touch);text-decoration:none;transition:color var(--t)}
+.ftr ul a:hover{color:var(--text-primary)}
+.ftr-bot{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--border);font-size:13px;color:var(--text-tertiary)}
+
+/* sticky mobile CTA */
+.sticky{display:none}
+
+/* =====================================================================
+   RESPONSIVE
+   ===================================================================== */
+@media (max-width:1100px){
+  .pay-grid{grid-template-columns:minmax(0,1fr);gap:var(--s6)}
+  .pay-r{max-width:880px}
+  .sg{grid-template-columns:160px 1fr}
+  .why{grid-template-columns:1fr 1fr;row-gap:var(--s6)}
+}
+@media (max-width:900px){
+  .nav{display:none}
+  .hdr .hdr-cta{display:none}
+  .menu-btn{display:inline-flex}
+  .hdr-in{height:60px;gap:var(--s3)}
+  .hdr-right{margin-left:auto;gap:var(--s2)}
+  .nav.open{display:flex;position:absolute;top:calc(100% + 8px);left:var(--gutter);right:var(--gutter);flex-direction:column;align-items:stretch;gap:0;padding:var(--s2);background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow-md)}
+  .nav.open a{min-height:48px;padding:0 var(--s3);font-size:16px;color:var(--text-primary)}
+  .nav.open .nav-cta{display:flex;justify-content:center;margin-top:var(--s2);color:#fff}
+  .nav.open .nav-cta:hover{background:var(--accent-hover)}
+  .hero-grid,.split,.qual-grid,.about-grid,.faq-grid,.lead-grid{grid-template-columns:minmax(0,1fr)}
+  .hero-grid{gap:var(--s6)}
+  .split,.qual-grid,.about-grid,.faq-grid{gap:var(--s5)}
+  .profile{justify-self:stretch;max-width:none}
+  .ctx ul{grid-template-columns:1fr 1fr;justify-content:stretch}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps li{display:grid;grid-template-columns:32px 1fr;column-gap:var(--s4);padding-bottom:var(--s5)}
+  .steps li:last-child{padding-bottom:0}
+  .steps li .step-dot{grid-row:1/3}
+  .steps h3{margin-top:5px}
+  .steps li:not(:last-child)::after{top:36px;bottom:4px;left:16px;right:auto;width:1px;height:auto}
+  .steps p{grid-column:2}
+  .aside{position:static}
+  .lead-grid{gap:var(--s6)}
+  .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:var(--s2) var(--gutter) calc(var(--s2) + env(safe-area-inset-bottom,0px));background:rgba(245,245,242,.9);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-top:1px solid var(--border);transform:translateY(110%);visibility:hidden;transition:transform 220ms var(--ease),visibility 220ms}
+  .sticky.show{transform:none;visibility:visible}
+  .sticky-in{display:flex;gap:var(--s2)}
+  .sticky .btn-primary{flex:1}
+  body.has-sticky{padding-bottom:76px}
+}
+@media (max-width:768px){
+  .model{grid-template-columns:1fr;gap:0}
+  .model-arrow{justify-self:center;margin:-8px 0;position:relative;z-index:1;transform:rotate(90deg);width:32px;height:32px}
+  .model-arrow .i{width:16px;height:16px}
+  .model-a{flex-direction:row;align-items:center;justify-content:flex-start;gap:var(--s4)}
+  .model-a>div{display:block}
+  .model-a b{margin-top:0}
+  .why{grid-template-columns:1fr;gap:0}
+  .why li{display:grid;grid-template-columns:36px 1fr;column-gap:var(--s3);padding:var(--s4) 0;border-top:1px solid var(--border)}
+  .why li:last-child{border-bottom:1px solid var(--border)}
+  .why .n{grid-row:1/3;padding-top:2px}
+  .why h3{margin-top:0}
+  .why p{margin-top:var(--s1);grid-column:2}
+  .sg{grid-template-columns:1fr;padding:var(--s4) 0}
+  .sg h3{padding-top:0;font-size:13px}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+  .ftr-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  section{padding:var(--s7) 0}
+  .sec-head{margin-bottom:var(--s5)}
+  .hero{padding:var(--s4) 0 var(--s6)}
+  .hero-lead{margin-top:var(--s4);font-size:17px}
+  .hero-price{margin-top:var(--s4);font-size:14.5px;padding:10px var(--s3)}
+  .hero .cta-row{margin-top:var(--s5)}
+  .hero .cta-row .btn{width:100%}
+  .hero-micro{gap:6px var(--s4)}
+  .board{padding:var(--s3);border-radius:18px}
+  .board-top{padding:2px var(--s1) 10px}
+  .req{padding:var(--s3) 14px}
+  .req-role{font-size:15px}
+  .reqs .req:nth-child(3){display:none}
+  .req-go{display:none}
+  .ctx ul{grid-template-columns:1fr;gap:10px}
+  .ctx li{font-size:13px;gap:var(--s2)}
+  .pain li{font-size:16px;padding:14px 0}
+  .pain-close{font-size:17px}
+  .prob .cta-row .btn,.how-foot .btn{width:100%}
+  .chip{font-size:14px;padding:6px var(--s3) 6px 10px}
+  .chip small{display:none}
+  .spec-sel{padding:var(--s3);bottom:calc(var(--s3) + 76px)}
+  .spec-sel .btn{width:100%}
+  .spec-miss .btn{width:100%}
+  .how-foot{margin-top:var(--s6)}
+  .profile{padding:var(--s4)}
+  .profile dl{margin-top:var(--s4)}
+  .model-a,.model-b{padding:var(--s4) var(--s5)}
+  .calc summary{font-size:14px;gap:10px}
+  .calc-ctrls{gap:0 var(--s4)}
+  .calc-ctrls .fld-rate{flex-basis:100%}
+  .calc-out output{font-size:18px}
+  .fcard{padding:var(--s5) var(--s4);border-radius:20px}
+  .grid2{grid-template-columns:1fr}
+  .grid2 .field+.field{margin-top:var(--s4)}
+  .choices{grid-template-columns:1fr 1fr}
+  .fnav{margin-top:var(--s5)}
+  .fnav .grow{flex:1;min-width:0}
+  .fnav .back-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .fnav #bBack{width:var(--h-control);padding:0}
+  .submit-note{justify-content:flex-start}
+  .faq-list summary{font-size:15.5px;min-height:56px}
+  .faq-list details p{padding-right:0;font-size:15px}
+  .final p{font-size:16px}
+  .final .cta-row .btn{width:100%}
+}
+@media (max-width:430px){
+  .segctl.country span{flex-direction:column;gap:5px;min-height:56px;font-size:13.5px}
+  .set-row.stack{flex-direction:column;align-items:stretch;gap:10px;padding:14px var(--s4)}
+  .set-row.stack .segctl{width:100%}
+  .rn{font-size:14px;overflow-wrap:break-word}
+  .roles li{padding-left:var(--s3);gap:6px}
+  .roles .stepper input{width:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .req{opacity:1}
+}
+</style>
+</head>
+<body>
+<!-- icon sprite (outline, 1.75 stroke) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.9"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.5h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-3 7.8-7 9-4-1.2-7-4.7-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.5 3.3-5.5 6.5-5.5s5.9 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18.5 14.8c1.7.8 2.8 2.6 3 5.2"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5v3a1.8 1.8 0 01-2 1.8 17.8 17.8 0 01-7.8-2.8 17.5 17.5 0 01-5.4-5.4A17.8 17.8 0 013 5.2 1.8 1.8 0 014.8 3.3h3a1.8 1.8 0 011.8 1.5c.1.9.4 1.7.7 2.5a1.8 1.8 0 01-.4 1.9L8.6 10.5a14.4 14.4 0 005.4 5.4l1.3-1.3a1.8 1.8 0 011.9-.4c.8.3 1.6.6 2.5.7a1.8 1.8 0 011.3 1.6z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.8-1.4a.5.5 0 000-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo" aria-label="OnlyStaff"><i></i>only<b>staff</b></a>
+    <nav class="nav" id="nav" data-i18n-aria="nav.label" aria-label="Nawigacja">
+      <a href="#specjalisci" data-i18n="nav.spec">Specjaliści</a>
+      <a href="#jak-to-dziala" data-i18n="nav.how">Jak to działa</a>
+      <a href="#dlaczego" data-i18n="nav.why">Dlaczego OnlyStaff</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#zapotrzebowanie" class="btn btn-primary nav-cta" data-cta="header" data-i18n="cta.main">Potrzebuję pracowników</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="seg-lang" role="group" aria-label="Język / Язык">
+        <button type="button" data-lang="pl" aria-pressed="true" lang="pl" aria-label="Polski"><span>PL</span></button>
+        <button type="button" data-lang="ru" aria-pressed="false" lang="ru" aria-label="Русский"><span>RU</span></button>
+      </div>
+      <a href="#zapotrzebowanie" class="btn btn-primary hdr-cta" data-cta="header" data-i18n="cta.main">Potrzebuję pracowników</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"><span class="sr" data-i18n="nav.menu">Menu</span><svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span data-i18n="hero.h1a">Masz obiekt.</span><span data-i18n="hero.h1b">Brakuje ludzi?</span></h1>
+      <p class="hero-lead"><span data-i18n="hero.sub">Powiedz nam, ilu fachowców potrzebujesz, gdzie i od kiedy. OnlyStaff szuka pracowników pod konkretne projekty w Niemczech, Holandii i Belgii.</span> <strong data-i18n="hero.scale">Od jednego fachowca po całą brygadę.</strong></p>
+      <p class="hero-price"><svg class="i" aria-hidden="true"><use href="#i-check-circle"/></svg><span data-i18n-html="hero.price"><strong>Jednorazowa opłata za rekrutację.</strong> Bez stałej marży OnlyStaff od każdej przepracowanej godziny.</span></p>
+      <div class="cta-row">
+        <a href="#zapotrzebowanie" class="btn btn-primary btn-lg" data-cta="hero"><span data-i18n="cta.main">Potrzebuję pracowników</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a href="#" class="btn btn-secondary btn-lg js-wa" data-place="hero" hidden><svg class="i i-wa" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cta.wa">Napisz na WhatsApp</span></a>
+      </div>
+      <ul class="hero-micro micro">
+        <li><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="hero.note">4 krótkie kroki • około 1 minuty</span></li>
+        <li class="js-noobl"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="noobl">Samo wysłanie zapotrzebowania nie uruchamia płatnej rekrutacji.</span></li>
+      </ul>
+    </div>
+
+    <div class="board" role="region" data-i18n-aria="hero.boardTitle" aria-label="Przykładowe zapotrzebowania">
+      <div class="board-top"><b data-i18n="hero.boardTitle">Przykładowe zapotrzebowania</b><span>DE / NL / BE</span></div>
+      <div class="reqs">
+        <button type="button" class="req" data-prefill='{"country":"DE","cityKey":"city.hh","role":"trockenbau","qty":4,"start":"7"}'>
+          <span><span class="req-ex" data-i18n="ex">Przykład</span><span class="req-role">4 × Trockenbauer</span><span class="req-meta"><span class="flag f-de"></span><span data-i18n="city.hh">Hamburg</span></span></span>
+          <span class="req-side"><span class="req-tag" data-i18n="hero.c1">Start: do 7 dni</span><svg class="i req-go" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        </button>
+        <button type="button" class="req" data-prefill='{"country":"NL","cityKey":"city.rtm","role":"wig","qty":2,"start":"asap"}'>
+          <span><span class="req-ex" data-i18n="ex">Przykład</span><span class="req-role">2 × WIG-Schweißer</span><span class="req-meta"><span class="flag f-nl"></span><span data-i18n="city.rtm">Rotterdam</span></span></span>
+          <span class="req-side"><span class="req-tag" data-i18n="hero.c2">Start: ASAP</span><svg class="i req-go" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        </button>
+        <button type="button" class="req" data-prefill='{"country":"BE","cityKey":"city.ant","role":"monter","qty":5,"start":"14"}'>
+          <span><span class="req-ex" data-i18n="ex">Przykład</span><span class="req-role">5 × Monter</span><span class="req-meta"><span class="flag f-be"></span><span data-i18n="city.ant">Antwerpia</span></span></span>
+          <span class="req-side"><span class="req-tag" data-i18n="hero.c3">Start: do 14 dni</span><svg class="i req-go" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        </button>
+      </div>
+      <p class="board-hint" data-i18n="hero.hint">Kliknij przykład, aby wypełnić nim formularz.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEXT STRIP -->
+<div class="ctx">
+  <ul class="wrap">
+    <li><span class="flags" aria-hidden="true"><span class="flag f-de"></span><span class="flag f-nl"></span><span class="flag f-be"></span></span><span data-i18n="strip.countries">Niemcy · Holandia · Belgia</span></li>
+    <li><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg><span data-i18n="strip.sectors">Budowa • Montaż • Przemysł</span></li>
+    <li><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span data-i18n="strip.scale">1 fachowiec lub cała brygada</span></li>
+    <li><svg class="i" aria-hidden="true"><use href="#i-target"/></svg><span data-i18n="strip.proj">Rekrutacja pod konkretny projekt</span></li>
+  </ul>
+</div>
+
+<!-- PROBLEM -->
+<section class="prob">
+  <div class="wrap split">
+    <h2><span data-i18n="prob.h1">Zlecenie jest.</span><span data-i18n="prob.h2">Termin ustalony.</span><span data-i18n="prob.h3">Ludzi brakuje.</span></h2>
+    <div>
+      <ul class="pain">
+        <li><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span data-i18n="prob.1">Rusza nowy obiekt, a brygada jest za mała.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span data-i18n="prob.2">Ktoś zrezygnował albo nie dojechał.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span data-i18n="prob.3">Nie masz czasu tygodniami szukać ludzi po grupach i ogłoszeniach.</span></li>
+      </ul>
+      <p class="pain-close" data-i18n="prob.close">Powiedz nam, kogo potrzebujesz. Rekrutacją zajmiemy się my.</p>
+      <div class="cta-row"><a href="#zapotrzebowanie" class="btn btn-primary" data-cta="problem"><span data-i18n="cta.main">Potrzebuję pracowników</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALISTS -->
+<section class="bg-surface" id="specjalisci">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="spec.h">Kogo możemy dla Ciebie szukać?</h2>
+      <p class="lead" data-i18n="spec.p">Zaznacz specjalizacje, a dodamy je do Twojego zapotrzebowania.</p>
+    </div>
+    <div id="specGrid"></div>
+    <div class="spec-sel" id="specSel" hidden aria-live="polite">
+      <p id="specSelTxt"></p>
+      <a href="#zapotrzebowanie" class="btn btn-primary" data-cta="spec_selected"><span data-i18n="spec.go">Przejdź do formularza</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+    <div class="spec-miss">
+      <div><b data-i18n="spec.miss">Nie widzisz swojej specjalizacji?</b><span data-i18n="spec.missP">Opisz, kogo potrzebujesz — możemy szukać również innych profili.</span></div>
+      <a href="#zapotrzebowanie" class="btn btn-secondary" data-cta="spec_missing" data-focus-search="1" data-i18n="cta.report">Zgłoś zapotrzebowanie</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="jak-to-dziala">
+  <div class="wrap">
+    <div class="sec-head"><h2 data-i18n="how.h">Jak to działa?</h2></div>
+    <ol class="steps">
+      <li><span class="step-dot">01</span><h3 data-i18n="how.1t">Mówisz, kogo potrzebujesz</h3><p data-i18n="how.1d">Specjalizacja, liczba osób, miejsce, termin startu i najważniejsze wymagania.</p></li>
+      <li><span class="step-dot">02</span><h3 data-i18n="how.2t">Szukamy i wstępnie kwalifikujemy</h3><p data-i18n="how.2d">Kontaktujemy się z kandydatami i zbieramy informacje istotne dla Twojego projektu.</p></li>
+      <li><span class="step-dot">03</span><h3 data-i18n="how.3t">Otrzymujesz dopasowanych kandydatów</h3><p data-i18n="how.3d">Dostajesz informacje o osobach, które spełniają ustalone wymagania, i decydujesz, z kim chcesz rozmawiać dalej.</p></li>
+    </ol>
+    <div class="how-foot">
+      <a href="#zapotrzebowanie" class="btn btn-primary" data-cta="how"><span data-i18n="cta.main">Potrzebuję pracowników</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      <p class="note-i"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="how.foot">Warunki rekrutacji ustalamy przed rozpoczęciem poszukiwań.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFICATION -->
+<section class="bg-surface">
+  <div class="wrap qual-grid">
+    <div>
+      <h2 data-i18n="qual.h">Nie wysyłamy Ci przypadkowych numerów.</h2>
+      <p class="lead" data-i18n="qual.p">Zanim przekażemy kandydata, przeprowadzamy wstępną rozmowę i zbieramy informacje pod kątem Twojego zapotrzebowania.</p>
+      <ul class="facts" id="chips"></ul>
+      <p class="honest"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="qual.honest">Informacje zbieramy podczas wstępnej rozmowy z kandydatem. Ostateczną ocenę i decyzję o współpracy podejmuje klient.</span></p>
+    </div>
+    <div class="profile" role="group" data-i18n-aria="qual.cardAria" aria-label="Przykładowy profil kandydata">
+      <span class="tag" data-i18n="qual.ex">Przykładowy profil</span>
+      <div class="profile-h">
+        <span class="avatar" aria-hidden="true"><svg class="i"><use href="#i-user"/></svg></span>
+        <div><b>Trockenbauer</b><span data-i18n="qual.head">7 lat doświadczenia</span></div>
+      </div>
+      <dl>
+        <div><dt data-i18n="qual.r2">Doświadczenie w DE</dt><dd data-i18n="qual.v2">3 lata</dd></div>
+        <div><dt data-i18n="qual.r3">Dostępność</dt><dd data-i18n="qual.v3">od 01.10</dd></div>
+        <div><dt data-i18n="qual.r4">Lokalizacja</dt><dd data-i18n="qual.v4">Polska</dd></div>
+        <div><dt data-i18n="qual.r5">Język</dt><dd data-i18n="qual.v5">DE komunikatywny</dd></div>
+        <div><dt data-i18n="qual.r6">Prawo jazdy</dt><dd>B</dd></div>
+        <div><dt data-i18n="qual.r7">Samochód</dt><dd data-i18n="yes">Tak</dd></div>
+        <div><dt data-i18n="qual.r8">Gotowość do wyjazdu</dt><dd data-i18n="yes">Tak</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="pay" id="model">
+  <div class="wrap">
+    <div class="pay-grid">
+    <div class="pay-l">
+      <h2><span data-i18n="pay.h1">Płacisz za rekrutację.</span><span data-i18n="pay.h2">Nie za każdą godzinę pracy.</span></h2>
+    </div>
+    <div class="pay-r">
+    <div class="model">
+      <div class="model-a">
+        <span class="model-num">1×</span>
+        <div><b data-i18n="pay.oneL">Jednorazowa opłata</b><span class="s" data-i18n="pay.oneS">za rekrutację</span></div>
+      </div>
+      <div class="model-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow-right"/></svg></div>
+      <div class="model-b">
+        <span class="ok" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></span>
+        <span class="zero" data-i18n="pay.zero">0 € / h</span>
+        <b data-i18n="pay.zeroL">stałej prowizji OnlyStaff</b>
+        <span class="s" data-i18n="pay.zeroS">po zakończeniu rekrutacji</span>
+      </div>
+    </div>
+
+    <p class="pay-p" data-i18n="pay.p">Ustalamy jednorazową opłatę za usługę rekrutacyjną. Po zakończeniu rekrutacji OnlyStaff nie nalicza stałej prowizji od godzin pracy zatrudnionej osoby.</p>
+    <details class="calc" id="kalkulator">
+      <summary><svg class="i" aria-hidden="true"><use href="#i-calc"/></svg><span data-i18n="calc.toggle">Zobacz przykład kosztu marży godzinowej</span><svg class="i chev" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+      <div class="calc-body">
+        <div class="calc-ctrls">
+          <div class="fld">
+            <label for="cW" data-i18n="calc.w">Liczba pracowników</label>
+            <div class="stepper"><button type="button" data-calc="cW:-1" data-i18n-aria="less" aria-label="Mniej"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button><input id="cW" type="number" inputmode="numeric" min="1" max="100" value="4"><button type="button" data-calc="cW:1" data-i18n-aria="more" aria-label="Więcej"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
+          </div>
+          <div class="fld">
+            <label for="cH" data-i18n="calc.hrs">Godziny / miesiąc</label>
+            <div class="stepper"><button type="button" data-calc="cH:-8" data-i18n-aria="less" aria-label="Mniej"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button><input id="cH" type="number" inputmode="numeric" min="8" max="300" value="160"><button type="button" data-calc="cH:8" data-i18n-aria="more" aria-label="Więcej"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
+          </div>
+          <div class="fld fld-rate">
+            <span class="lbl" id="cRl"><span data-i18n="calc.r">Przykładowa marża €/h</span> <em data-i18n="calc.rEx">(przykład kalkulacyjny)</em></span>
+            <div class="segs" role="radiogroup" aria-labelledby="cRl">
+              <label><input type="radio" name="cR" value="1"><span>1 €</span></label>
+              <label><input type="radio" name="cR" value="2" checked><span>2 €</span></label>
+              <label><input type="radio" name="cR" value="3"><span>3 €</span></label>
+              <label><input type="radio" name="cR" value="4"><span>4 €</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <div><small data-i18n="calc.m">Miesięcznie</small><output id="oM" for="cW cH">1 280 €</output></div>
+          <div><small data-i18n="calc.y">Rocznie</small><output id="oY" for="cW cH">15 360 €</output></div>
+        </div>
+        <p class="disc" data-i18n="calc.disc">To wyłącznie przykład matematyczny pokazujący mechanizm marży godzinowej. Rzeczywiste warunki ofert mogą się różnić.</p>
+      </div>
+    </details>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="bg-surface" id="dlaczego">
+  <div class="wrap">
+    <div class="sec-head"><h2 data-i18n="why.h">Dlaczego OnlyStaff?</h2></div>
+    <ul class="why">
+      <li><span class="n">01</span><h3 data-i18n="why.1t">Znamy branżę</h3><p data-i18n="why.1d">Budowa, instalacje, metal i przemysł. Rozumiemy różnicę między Trockenbau a tynkowaniem oraz między WIG a MAG.</p></li>
+      <li><span class="n">02</span><h3 data-i18n="why.2t">Szukamy pod konkretny projekt</h3><p data-i18n="why.2d">Nie sprzedajemy dostępu do przypadkowej bazy. Szukamy ludzi według ustalonych wymagań.</p></li>
+      <li><span class="n">03</span><h3 data-i18n="why.3t">Od jednej osoby po całą brygadę</h3><p data-i18n="why.3d">Zakres rekrutacji dopasowujemy do realnego zapotrzebowania firmy.</p></li>
+      <li><span class="n">04</span><h3>DE / NL / BE</h3><p data-i18n="why.4d">Koncentrujemy się na specjalistach do projektów w Niemczech, Holandii i Belgii.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<!-- TODO PRODUCTION: potwierdź, że poniższy tekst odpowiada realnemu doświadczeniu firmy. -->
+<section id="o-nas">
+  <div class="wrap about-grid">
+    <h2 data-i18n="about.h">Rekrutujemy do branży, którą znamy z praktyki.</h2>
+    <div>
+      <p class="about-lead" data-i18n="about.p1">OnlyStaff koncentruje się na pracownikach budowlanych, montażowych i technicznych do projektów w Europie Zachodniej.</p>
+      <p class="about-p" data-i18n="about.p2">Na co dzień pracujemy z takimi profilami jak Trockenbauer, elektryk, monter, ślusarz, spawacz WIG/MAG czy monter rur. Dlatego już podczas pierwszej rozmowy wiemy, o co zapytać kandydata.</p>
+      <!-- MIEJSCE NA REALNE ZDJĘCIE (obiekt / zespół / proces pracy). Nie używać stocków. Styl .about-fig jest gotowy.
+      <figure class="about-fig">
+        <picture>
+          <source type="image/avif" srcset="img/obiekt-800.avif 800w, img/obiekt-1400.avif 1400w" sizes="(max-width:900px) 100vw, 560px">
+          <source type="image/webp" srcset="img/obiekt-800.webp 800w, img/obiekt-1400.webp 1400w" sizes="(max-width:900px) 100vw, 560px">
+          <img src="img/obiekt-800.jpg" alt="[opis zdjęcia]" width="800" height="600" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="lead-sec" id="zapotrzebowanie">
+  <div class="wrap lead-grid">
+    <div class="fcard">
+      <form id="leadForm" novalidate>
+        <div id="formBody">
+          <h2 data-i18n="form.h">Powiedz nam, kogo potrzebujesz.</h2>
+          <p class="fl" data-i18n="form.p">4 krótkie kroki. Najpierw potwierdzimy zapotrzebowanie i warunki współpracy, a dopiero potem zaczniemy rekrutację.</p>
+          <div class="prog">
+            <div class="prog-t" id="progT" aria-live="polite">Krok 1 z 4</div>
+            <div class="bar" aria-hidden="true"><i id="progBar"></i></div>
+          </div>
+
+          <!-- STEP 1 -->
+          <div class="fstep on" data-step="1">
+            <fieldset>
+              <legend class="q" data-i18n="s1.h">Gdzie jest projekt?</legend>
+              <div class="segctl country">
+                <label><input type="radio" name="country" value="DE"><span><i class="flag f-de"></i><b data-i18n="c.de">Niemcy</b></span></label>
+                <label><input type="radio" name="country" value="NL"><span><i class="flag f-nl"></i><b data-i18n="c.nl">Holandia</b></span></label>
+                <label><input type="radio" name="country" value="BE"><span><i class="flag f-be"></i><b data-i18n="c.be">Belgia</b></span></label>
+              </div>
+            </fieldset>
+            <label class="field" style="margin-top:var(--s5)"><span class="lab"><span data-i18n="s1.city">Miasto lub kod pocztowy</span><small data-i18n="opt">(opcjonalnie)</small></span><input class="inp" type="text" name="city" autocomplete="off" maxlength="80" data-i18n-ph="s1.cityPh" placeholder="np. Hamburg"></label>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="fstep" data-step="2">
+            <div class="q" id="s2h" data-i18n="s2.h">Kogo potrzebujesz?</div>
+            <div class="combo">
+              <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+              <label class="sr" for="roleSearch" data-i18n="s2.label">Wpisz specjalizację</label>
+              <input class="inp" id="roleSearch" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="roleList" data-i18n-ph="s2.ph" placeholder="Np. spawacz, monter…">
+              <div class="lbx" id="roleList" role="listbox" aria-labelledby="s2h"></div>
+            </div>
+            <div class="quick" id="quick"></div>
+            <ul class="roles" id="roles" aria-live="polite"></ul>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="fstep" data-step="3">
+            <fieldset>
+              <legend class="q" data-i18n="s3.h">Kiedy ludzie mają zacząć?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="start" value="asap"><span data-i18n="s3.o1">Jak najszybciej</span></label>
+                <label class="choice"><input type="radio" name="start" value="7"><span data-i18n="s3.o2">Do 7 dni</span></label>
+                <label class="choice"><input type="radio" name="start" value="14"><span data-i18n="s3.o3">Do 14 dni</span></label>
+                <label class="choice"><input type="radio" name="start" value="later"><span data-i18n="s3.o4">Później</span></label>
+              </div>
+            </fieldset>
+            <p class="skip"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="s3.skip">Możesz pominąć dodatkowe informacje — ustalimy je podczas rozmowy.</span></p>
+            <div class="set">
+              <fieldset class="set-block">
+                <legend data-i18n="s3.lang">Język</legend>
+                <div class="choices inline">
+                  <label class="choice"><input type="checkbox" name="lang" value="none"><span data-i18n="s3.lNone">Nie jest wymagany</span></label>
+                  <label class="choice"><input type="checkbox" name="lang" value="de"><span data-i18n="s3.lDe">Niemiecki</span></label>
+                  <label class="choice"><input type="checkbox" name="lang" value="en"><span data-i18n="s3.lEn">Angielski</span></label>
+                </div>
+              </fieldset>
+              <label class="set-row"><span data-i18n="s3.car">Własne auto wymagane?</span><input class="switch" type="checkbox" role="switch" name="car" value="yes"></label>
+              <fieldset class="set-row stack">
+                <legend class="sr" data-i18n="s3.house">Zapewniasz zakwaterowanie?</legend>
+                <span aria-hidden="true" data-i18n="s3.house">Zapewniasz zakwaterowanie?</span>
+                <div class="segctl sm">
+                  <label><input type="radio" name="housing" value="yes"><span data-i18n="yes">Tak</span></label>
+                  <label><input type="radio" name="housing" value="no"><span data-i18n="no">Nie</span></label>
+                  <label><input type="radio" name="housing" value="tbd"><span data-i18n="tbd">Do ustalenia</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <label class="field" style="margin-top:var(--s4)"><span class="lab"><span data-i18n="s3.notes">Dodatkowe wymagania</span><small data-i18n="opt">(opcjonalnie)</small></span><textarea class="inp" name="notes" maxlength="1000" data-i18n-ph="s3.notesPh" placeholder="np. płyty Knauf, SCC, praca na wysokości"></textarea></label>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="fstep" data-step="4">
+            <div class="q" data-i18n="s4.h">Gdzie mamy się z Tobą skontaktować?</div>
+            <div class="grid2">
+              <label class="field"><span class="lab" data-i18n="s4.company">Firma</span><input class="inp" type="text" name="company" autocomplete="organization" maxlength="120" required></label>
+              <label class="field"><span class="lab" data-i18n="s4.name">Imię</span><input class="inp" type="text" name="name" autocomplete="given-name" maxlength="80" required></label>
+            </div>
+            <div class="grid2">
+              <label class="field"><span class="lab" data-i18n="s4.phone">Telefon</span><input class="inp" type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="24" required placeholder="+48 …" aria-describedby="phoneHint"><small class="hint" id="phoneHint" data-i18n="s4.phoneHint">Skontaktujemy się, żeby potwierdzić szczegóły zapotrzebowania i warunki rekrutacji.</small></label>
+              <label class="field"><span class="lab"><span data-i18n="s4.email">E-mail</span><small data-i18n="opt">(opcjonalnie)</small></span><input class="inp" type="email" name="email" autocomplete="email" inputmode="email" maxlength="120"></label>
+            </div>
+            <label class="consent"><input class="cbox" type="checkbox" name="consent" required><span id="consentTxt"></span></label>
+            <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          </div>
+
+          <p class="err" id="formErr" role="alert"></p>
+          <div class="err-alt" id="errAlt" hidden></div>
+          <div class="fnav">
+            <button type="button" class="btn btn-secondary" id="bBack" hidden><svg class="i" aria-hidden="true"><use href="#i-chevron-left"/></svg><span class="back-txt" data-i18n="b.back">Wstecz</span></button>
+            <button type="button" class="btn btn-primary grow" id="bNext"><span data-i18n="b.next">Dalej</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+            <button type="submit" class="btn btn-primary grow" id="bSubmit" hidden><span id="bSubmitTxt" data-i18n="b.submit">Wyślij zapotrzebowanie</span><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></button>
+          </div>
+          <p class="micro submit-note js-noobl" id="submitNote" hidden><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="noobl2">Wysłanie zapotrzebowania nie uruchamia płatnej rekrutacji.</span></p>
+        </div>
+
+        <div class="done" id="formDone" hidden tabindex="-1">
+          <div class="done-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></div>
+          <h3 data-i18n="ok.h">Zapotrzebowanie otrzymane.</h3>
+          <p data-i18n="ok.p">Skontaktujemy się, aby potwierdzić szczegóły i przedstawić warunki rekrutacji.</p>
+          <a href="#" class="btn btn-secondary js-wa" data-place="success" data-wa="form" hidden><svg class="i i-wa" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="ok.wa">Dopisz szczegóły na WhatsApp</span></a>
+        </div>
+      </form>
+    </div>
+
+    <aside class="aside">
+      <h3 data-i18n="side.h">Co dalej po wysłaniu?</h3>
+      <ol class="next">
+        <li data-i18n="side.1">Potwierdzamy zapotrzebowanie.</li>
+        <li data-i18n="side.2">Ustalamy warunki rekrutacji.</li>
+        <li data-i18n="side.3">Rozpoczynamy poszukiwanie kandydatów.</li>
+      </ol>
+      <div class="talk" id="talkBox" hidden>
+        <h3 data-i18n="side.talkH">Wolisz porozmawiać?</h3>
+        <a href="#" class="btn btn-secondary js-wa" data-place="aside" hidden><svg class="i i-wa" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+        <a href="#" class="btn btn-secondary js-tel" data-place="aside" hidden><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span class="js-phone-txt" data-i18n="cta.call">Zadzwoń</span></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-surface" id="faq">
+  <div class="wrap faq-grid">
+    <h2 data-i18n="faq.h">Częste pytania</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2><span data-i18n="fin.h1">Masz obiekt?</span><span data-i18n="fin.h2">My zajmiemy się szukaniem ludzi.</span></h2>
+    <p data-i18n="fin.p">Powiedz nam, kogo potrzebujesz, ilu ludzi, gdzie i od kiedy.</p>
+    <div class="cta-row">
+      <a href="#zapotrzebowanie" class="btn btn-primary btn-lg" data-cta="final"><span data-i18n="cta.main">Potrzebuję pracowników</span><svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      <a href="#" class="btn btn-lg btn-dark-line js-wa" data-place="final" hidden><svg class="i i-wa" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a href="#top" class="logo"><i></i>only<b>staff</b></a>
+        <p class="ftr-tag" data-i18n="ft.tag">Rekrutacja fachowców budowlanych i technicznych do projektów w Niemczech, Holandii i Belgii.</p>
+      </div>
+      <div id="ftContact" hidden>
+        <h3 data-i18n="ft.contact">Kontakt</h3>
+        <ul>
+          <li><a href="#" class="js-tel" data-place="footer" hidden><span data-i18n="ft.phone">Telefon</span>:&nbsp;<span class="js-phone-txt2"></span></a></li>
+          <li><a href="#" class="js-mail" hidden>E-mail:&nbsp;<span class="js-mail-txt"></span></a></li>
+          <li><a href="#" class="js-wa" data-place="footer" hidden>WhatsApp</a></li>
+        </ul>
+      </div>
+      <div id="ftLegal">
+        <h3 data-i18n="ft.company">Dane firmy</h3>
+        <p id="ftCompany"></p>
+        <ul>
+          <li><a href="#" id="lnkImp" hidden data-i18n="ft.imp">Impressum / Dane firmy</a></li>
+          <li><a href="#" id="lnkPriv" hidden data-i18n="ft.priv">Polityka prywatności</a></li>
+          <li><a href="#" id="lnkCook" hidden data-i18n="ft.cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bot">© <span id="yr">2026</span> OnlyStaff</div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="sticky-in">
+    <a href="#zapotrzebowanie" class="btn btn-primary" data-cta="sticky" tabindex="-1"><span data-i18n="cta.main">Potrzebuję pracowników</span></a>
+    <a href="#" class="btn btn-secondary btn-icon js-wa" data-place="sticky" tabindex="-1" aria-label="WhatsApp" hidden><svg class="i i-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   CONFIG — uzupełnij przed produkcją
+   ===================================================================== */
+const CONFIG = {
+  siteUrl: 'https://onlystaff.pl',
+  demoMode: false,      // форма честно покажет ошибку, если formEndpoint пуст — так и должно быть в проде
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbxTF1Q5jo1su6Cn5803WhzP5P5u5oOLVIj0d_K68jikCiN3Ol4K38Xrg6XWuwdC_mY/exec',
+  whatsapp: '4915510469402',
+  phone: '+49 15510 469402',
+  email: 'info@mbud.agency',
+  privacyUrl: '/privacy.html',
+  impressumUrl: '/impressum.html',
+  cookiesUrl: '/privacy.html#cookies',
+  company: 'MBUD sp. z o.o., Ksawerów 3, 02-656 Warszawa, Polska · NIP 9522202055 · REGON 384966966 · KRS 0000815662',
+  // Показывать "Отправка заявки не запускает платный рекрутинг" ТОЛЬКО если это соответствует процессу и договору.
+  showNoObligationNote: true
+};
+
+/* ================= ANALYTICS ================= */
+function track(name, params){
+  params = Object.assign({lang: LANG}, params||{});
+  try{ (window.dataLayer = window.dataLayer || []).push(Object.assign({event:name}, params)); }catch(e){}
+  try{ if (typeof window.gtag === 'function') window.gtag('event', name, params); }catch(e){}
+  try{
+    if (typeof window.fbq === 'function'){
+      if (name === 'form_submit') window.fbq('track','Lead', params);
+      else if (name === 'whatsapp_click' || name === 'phone_click') window.fbq('track','Contact', params);
+      else window.fbq('trackCustom', name, params);
+    }
+  }catch(e){}
+}
+const once = new Set();
+function trackOnce(name, params){ if (once.has(name)) return; once.add(name); track(name, params); }
+
+/* ================= DATA ================= */
+const SPECS = [
+  {pl:'Wykończenia', ru:'Отделка', items:[
+    {id:'trockenbau', de:'Trockenbauer', pl:'Trockenbau (sucha zabudowa)', ru:'Гипсокартонщики'},
+    {id:'maler', de:'Maler', pl:'Malarze', ru:'Маляры'},
+    {id:'fliesen', de:'Fliesenleger', pl:'Płytkarze', ru:'Плиточники'},
+    {id:'putz', de:'Verputzer', pl:'Tynkarze', ru:'Штукатуры'}]},
+  {pl:'Budowa', ru:'Стройка', items:[
+    {id:'maurer', de:'Maurer', pl:'Murarze', ru:'Каменщики'},
+    {id:'schaler', de:'Schaler', pl:'Szalunki', ru:'Опалубщики'},
+    {id:'beton', de:'Betonbauer', pl:'Betoniarze', ru:'Бетонщики'},
+    {id:'allround', de:'Allrounder / Bauhelfer', pl:'Ogólnobudowlani', ru:'Разнорабочие'}]},
+  {pl:'Instalacje', ru:'Инженерные системы', items:[
+    {id:'elektro', de:'Elektriker', pl:'Elektrycy', ru:'Электрики'},
+    {id:'shk', de:'SHK', pl:'SHK (hydraulika, grzewcze)', ru:'Сантехника и отопление (SHK)'},
+    {id:'monter', de:'Monteure', pl:'Monterzy', ru:'Монтажники'}]},
+  {pl:'Metal / przemysł', ru:'Металл / промышленность', items:[
+    {id:'wig', de:'WIG-Schweißer', pl:'Spawacze WIG', ru:'Сварщики WIG'},
+    {id:'mag', de:'MAG-Schweißer', pl:'Spawacze MAG', ru:'Сварщики MAG'},
+    {id:'schlosser', de:'Schlosser', pl:'Ślusarze', ru:'Слесари'},
+    {id:'rohr', de:'Rohrschlosser', pl:'Monterzy rur', ru:'Трубомонтажники'},
+    {id:'metallbau', de:'Metallbauer', pl:'Monterzy konstrukcji', ru:'Металло\u00ADконструкции'},
+    {id:'industrie', de:'Industriemonteure', pl:'Monterzy przemysłowi', ru:'Промышленные монтажники'}]},
+  {pl:'Dach / fasada', ru:'Кровля / фасад', items:[
+    {id:'dach', de:'Dachdecker', pl:'Dekarze', ru:'Кровельщики'},
+    {id:'fassade', de:'Fassadenmonteure', pl:'Fasady', ru:'Фасадчики'},
+    {id:'wdvs', de:'WDVS', pl:'WDVS (ocieplenia)', ru:'Утепление WDVS'}]}
+];
+const ALL = SPECS.flatMap(g => g.items);
+const QUICK = ['trockenbau','maurer','wig','monter','elektro','maler'];
+
+const I18N = {
+pl:{
+ 'meta.title':'Pracownicy budowlani do Niemiec, Holandii i Belgii | OnlyStaff',
+ 'meta.desc':'Rekrutacja fachowców budowlanych i technicznych pod konkretne projekty w Niemczech, Holandii i Belgii. Jednorazowa opłata za rekrutację, bez stałej marży godzinowej OnlyStaff.',
+ 'og.title':'Masz obiekt. Brakuje ludzi? | OnlyStaff',
+ 'og.desc':'Fachowcy budowlani i techniczni pod konkretne projekty w Niemczech, Holandii i Belgii.',
+ 'nav.label':'Nawigacja','nav.how':'Jak to działa','nav.spec':'Specjaliści','nav.why':'Dlaczego OnlyStaff','nav.faq':'FAQ','nav.menu':'Menu',
+ 'cta.main':'Potrzebuję pracowników','cta.report':'Zgłoś zapotrzebowanie','cta.wa':'Napisz na WhatsApp','cta.call':'Zadzwoń',
+ 'hero.h1a':'Masz obiekt.','hero.h1b':'Brakuje ludzi?',
+ 'hero.sub':'Powiedz nam, ilu fachowców potrzebujesz, gdzie i od kiedy. OnlyStaff szuka pracowników pod konkretne projekty w Niemczech, Holandii i Belgii.',
+ 'hero.scale':'Od jednego fachowca po całą brygadę.',
+ 'hero.price':'<strong>Jednorazowa opłata za rekrutację.</strong> Bez stałej marży OnlyStaff od każdej przepracowanej godziny.',
+ 'hero.note':'4 krótkie kroki • około 1 minuty',
+ 'noobl':'Samo wysłanie zapotrzebowania nie uruchamia płatnej rekrutacji.',
+ 'noobl2':'Wysłanie zapotrzebowania nie uruchamia płatnej rekrutacji.',
+ 'hero.boardTitle':'Przykładowe zapotrzebowania','ex':'Przykład',
+ 'hero.c1':'Start: do 7 dni','hero.c2':'Start: ASAP','hero.c3':'Start: do 14 dni',
+ 'hero.hint':'Kliknij przykład, aby wypełnić nim formularz.',
+ 'city.hh':'Hamburg','city.rtm':'Rotterdam','city.ant':'Antwerpia',
+ 'c.de':'Niemcy','c.nl':'Holandia','c.be':'Belgia',
+ 'strip.countries':'Niemcy · Holandia · Belgia','strip.sectors':'Budowa • Montaż • Przemysł','strip.scale':'1 fachowiec lub cała brygada','strip.proj':'Rekrutacja pod konkretny projekt',
+ 'prob.h1':'Zlecenie jest.','prob.h2':'Termin ustalony.','prob.h3':'Ludzi brakuje.',
+ 'prob.1':'Rusza nowy obiekt, a brygada jest za mała.','prob.2':'Ktoś zrezygnował albo nie dojechał.',
+ 'prob.3':'Nie masz czasu tygodniami szukać ludzi po grupach i ogłoszeniach.',
+ 'prob.close':'Powiedz nam, kogo potrzebujesz. Rekrutacją zajmiemy się my.',
+ 'spec.h':'Kogo możemy dla Ciebie szukać?','spec.p':'Zaznacz specjalizacje, a dodamy je do Twojego zapotrzebowania.',
+ 'spec.sel':'Wybrane specjalizacje: {n}. Uzupełnij resztę zapotrzebowania w formularzu.','spec.go':'Przejdź do formularza',
+ 'spec.miss':'Nie widzisz swojej specjalizacji?','spec.missP':'Opisz, kogo potrzebujesz — możemy szukać również innych profili.',
+ 'how.h':'Jak to działa?',
+ 'how.1t':'Mówisz, kogo potrzebujesz','how.1d':'Specjalizacja, liczba osób, miejsce, termin startu i najważniejsze wymagania.',
+ 'how.2t':'Szukamy i wstępnie kwalifikujemy','how.2d':'Kontaktujemy się z kandydatami i zbieramy informacje istotne dla Twojego projektu.',
+ 'how.3t':'Otrzymujesz dopasowanych kandydatów','how.3d':'Dostajesz informacje o osobach, które spełniają ustalone wymagania, i decydujesz, z kim chcesz rozmawiać dalej.',
+ 'how.foot':'Warunki rekrutacji ustalamy przed rozpoczęciem poszukiwań.',
+ 'qual.h':'Nie wysyłamy Ci przypadkowych numerów.',
+ 'qual.p':'Zanim przekażemy kandydata, przeprowadzamy wstępną rozmowę i zbieramy informacje pod kątem Twojego zapotrzebowania.',
+ 'qual.chips':['specjalizacja','doświadczenie','dostępność','możliwy termin startu','aktualna lokalizacja','gotowość do wyjazdu','język','prawo jazdy','samochód','dokumenty — jeśli wymagane','certyfikaty — jeśli wymagane'],
+ 'qual.honest':'Informacje zbieramy podczas wstępnej rozmowy z kandydatem. Ostateczną ocenę i decyzję o współpracy podejmuje klient.',
+ 'qual.cardAria':'Przykładowy profil kandydata','qual.ex':'Przykładowy profil','qual.head':'7 lat doświadczenia',
+ 'qual.r2':'Doświadczenie w DE','qual.v2':'3 lata','qual.r3':'Dostępność','qual.v3':'od 01.10',
+ 'qual.r4':'Lokalizacja','qual.v4':'Polska','qual.r5':'Język','qual.v5':'DE komunikatywny','qual.r6':'Prawo jazdy','qual.r7':'Samochód','qual.r8':'Gotowość do wyjazdu',
+ 'pay.h1':'Płacisz za rekrutację.','pay.h2':'Nie za każdą godzinę pracy.',
+ 'pay.oneL':'Jednorazowa opłata','pay.oneS':'za rekrutację',
+ 'pay.zero':'0 € / h','pay.zeroL':'stałej prowizji OnlyStaff','pay.zeroS':'po zakończeniu rekrutacji',
+ 'pay.p':'Ustalamy jednorazową opłatę za usługę rekrutacyjną. Po zakończeniu rekrutacji OnlyStaff nie nalicza stałej prowizji od godzin pracy zatrudnionej osoby.',
+ 'calc.toggle':'Zobacz przykład kosztu marży godzinowej','calc.w':'Liczba pracowników','calc.hrs':'Godziny / miesiąc','calc.r':'Przykładowa marża €/h','calc.rEx':'(przykład kalkulacyjny)',
+ 'calc.m':'Miesięcznie','calc.y':'Rocznie',
+ 'calc.disc':'To wyłącznie przykład matematyczny pokazujący mechanizm marży godzinowej. Rzeczywiste warunki ofert mogą się różnić.',
+ 'less':'Mniej','more':'Więcej','remove':'Usuń','qtyOf':'Liczba osób: {r}',
+ 'why.h':'Dlaczego OnlyStaff?',
+ 'why.1t':'Znamy branżę','why.1d':'Budowa, instalacje, metal i przemysł. Rozumiemy różnicę między Trockenbau a tynkowaniem oraz między WIG a MAG.',
+ 'why.2t':'Szukamy pod konkretny projekt','why.2d':'Nie sprzedajemy dostępu do przypadkowej bazy. Szukamy ludzi według ustalonych wymagań.',
+ 'why.3t':'Od jednej osoby po całą brygadę','why.3d':'Zakres rekrutacji dopasowujemy do realnego zapotrzebowania firmy.',
+ 'why.4d':'Koncentrujemy się na specjalistach do projektów w Niemczech, Holandii i Belgii.',
+ 'about.h':'Rekrutujemy do branży, którą znamy z praktyki.',
+ 'about.p1':'OnlyStaff koncentruje się na pracownikach budowlanych, montażowych i technicznych do projektów w Europie Zachodniej.',
+ 'about.p2':'Na co dzień pracujemy z takimi profilami jak Trockenbauer, elektryk, monter, ślusarz, spawacz WIG/MAG czy monter rur. Dlatego już podczas pierwszej rozmowy wiemy, o co zapytać kandydata.',
+ 'form.h':'Powiedz nam, kogo potrzebujesz.','form.p':'4 krótkie kroki. Najpierw potwierdzimy zapotrzebowanie i warunki współpracy, a dopiero potem zaczniemy rekrutację.',
+ 'form.step':'Krok {n} z 4','opt':'(opcjonalnie)',
+ 's1.h':'Gdzie jest projekt?','s1.city':'Miasto lub kod pocztowy','s1.cityPh':'np. Hamburg',
+ 's2.h':'Kogo potrzebujesz?','s2.label':'Wpisz specjalizację','s2.ph':'Np. spawacz, monter…','s2.custom':'Dodaj: „{q}”','s2.customSub':'Inna specjalizacja',
+ 's3.h':'Kiedy ludzie mają zacząć?','s3.o1':'Jak najszybciej','s3.o2':'Do 7 dni','s3.o3':'Do 14 dni','s3.o4':'Później',
+ 's3.skip':'Możesz pominąć dodatkowe informacje — ustalimy je podczas rozmowy.',
+ 's3.lang':'Język','s3.lNone':'Nie jest wymagany','s3.lDe':'Niemiecki','s3.lEn':'Angielski',
+ 's3.car':'Własne auto wymagane?','s3.house':'Zapewniasz zakwaterowanie?','yes':'Tak','no':'Nie','tbd':'Do ustalenia',
+ 's3.notes':'Dodatkowe wymagania','s3.notesPh':'np. płyty Knauf, SCC, praca na wysokości',
+ 's4.h':'Gdzie mamy się z Tobą skontaktować?','s4.company':'Firma','s4.name':'Imię','s4.phone':'Telefon','s4.email':'E-mail',
+ 's4.phoneHint':'Skontaktujemy się, żeby potwierdzić szczegóły zapotrzebowania i warunki rekrutacji.',
+ 's4.consent':'Wyrażam zgodę na przetwarzanie moich danych w celu obsługi zapotrzebowania zgodnie z {privacy}.','s4.privacy':'polityką prywatności',
+ 'b.back':'Wstecz','b.next':'Dalej','b.submit':'Wyślij zapotrzebowanie','b.sending':'Wysyłanie…',
+ 'e.country':'Wybierz kraj, w którym jest projekt.','e.roles':'Dodaj co najmniej jedną specjalizację.','e.start':'Wybierz, kiedy ludzie mają zacząć.',
+ 'e.company':'Podaj nazwę firmy.','e.name':'Podaj imię.','e.phone':'Podaj numer telefonu z numerem kierunkowym, np. +48 600 000 000.','e.consent':'Zaznacz zgodę na przetwarzanie danych.',
+ 'e.send':'Nie udało się wysłać formularza. Spróbuj ponownie za chwilę.','e.sendAlt':'Nie udało się wysłać formularza. Spróbuj ponownie albo skontaktuj się z nami bezpośrednio:',
+ 'e.config':'Formularz jest chwilowo niedostępny.','e.configAlt':'Formularz jest chwilowo niedostępny. Skontaktuj się z nami bezpośrednio:',
+ 'ok.h':'Zapotrzebowanie otrzymane.','ok.p':'Skontaktujemy się, aby potwierdzić szczegóły i przedstawić warunki rekrutacji.','ok.wa':'Dopisz szczegóły na WhatsApp',
+ 'side.h':'Co dalej po wysłaniu?','side.1':'Potwierdzamy zapotrzebowanie.','side.2':'Ustalamy warunki rekrutacji.','side.3':'Rozpoczynamy poszukiwanie kandydatów.',
+ 'side.talkH':'Wolisz porozmawiać?',
+ 'faq.h':'Częste pytania',
+ 'faq':[
+  ['Ile kosztuje rekrutacja?','Koszt zależy od profilu, liczby osób i warunków rekrutacji. Po otrzymaniu zapotrzebowania przedstawiamy warunki, zanim zaczniemy poszukiwania.'],
+  ['Kiedy płacę?','Szczegółowe warunki, w tym moment płatności, ustalamy przed rozpoczęciem rekrutacji.'],
+  ['Jak szybko możecie znaleźć pracowników?','To zależy od specjalizacji, liczby osób, lokalizacji, wymagań i aktualnej dostępności kandydatów. Realny termin podamy po analizie zapotrzebowania.'],
+  ['Czy płacę prowizję od godzin pracy?','Nie. W modelu bezpośredniej rekrutacji płacisz jednorazowo za usługę. Po jej zakończeniu OnlyStaff nie nalicza stałej prowizji od godzin pracy zatrudnionej osoby.'],
+  ['Czy możecie znaleźć całą brygadę?','Tak. Szukamy zarówno pojedynczych fachowców, jak i kilku osób jednej lub różnych specjalizacji.'],
+  ['Jak wygląda wstępna kwalifikacja kandydatów?','Rozmawiamy z kandydatem i pytamy o doświadczenie, dostępność, termin startu, lokalizację, język, prawo jazdy, a w razie potrzeby o dokumenty i certyfikaty. Ostateczną decyzję podejmujesz Ty.'],
+  ['Co jeśli kandydat zrezygnuje?','Szczegółowe warunki ustalamy przed rozpoczęciem rekrutacji.']
+ ],
+ 'fin.h1':'Masz obiekt?','fin.h2':'My zajmiemy się szukaniem ludzi.','fin.p':'Powiedz nam, kogo potrzebujesz, ilu ludzi, gdzie i od kiedy.',
+ 'ft.tag':'Rekrutacja fachowców budowlanych i technicznych do projektów w Niemczech, Holandii i Belgii.',
+ 'ft.contact':'Kontakt','ft.phone':'Telefon','ft.company':'Dane firmy',
+ 'ft.imp':'Impressum / Dane firmy','ft.priv':'Polityka prywatności','ft.cookies':'Cookies',
+ 'svc':'Rekrutacja pracowników budowlanych i technicznych',
+ 'wa.msg':'Dzień dobry, szukam pracowników na projekt.',
+ 'wa.msgForm':'Dzień dobry, wysłałem zapotrzebowanie przez stronę ({s}). Chcę dopisać szczegóły.'
+},
+ru:{
+ 'meta.title':'Строительные специалисты на объекты в Германии, Нидерландах и Бельгии | OnlyStaff',
+ 'meta.desc':'Подбор строительных и технических специалистов под конкретные проекты в Германии, Нидерландах и Бельгии. Единоразовая оплата за подбор, без постоянной почасовой комиссии OnlyStaff.',
+ 'og.title':'Есть объект. Не хватает людей? | OnlyStaff',
+ 'og.desc':'Строительные и технические специалисты под конкретные проекты в Германии, Нидерландах и Бельгии.',
+ 'nav.label':'Навигация','nav.how':'Как это работает','nav.spec':'Специалисты','nav.why':'Почему OnlyStaff','nav.faq':'Вопросы','nav.menu':'Меню',
+ 'cta.main':'Нужны работники','cta.report':'Оставить заявку','cta.wa':'Написать в WhatsApp','cta.call':'Позвонить',
+ 'hero.h1a':'Есть объект.','hero.h1b':'Не хватает людей?',
+ 'hero.sub':'Скажите, сколько специалистов вам нужно, куда и с какого числа. OnlyStaff ищет людей под конкретные проекты в Германии, Нидерландах и Бельгии.',
+ 'hero.scale':'От одного специалиста до целой бригады.',
+ 'hero.price':'<strong>Единоразовая оплата за подбор.</strong> Без постоянной комиссии OnlyStaff за каждый отработанный час.',
+ 'hero.note':'4 коротких шага • около 1 минуты',
+ 'noobl':'Сама отправка заявки не запускает платный подбор.',
+ 'noobl2':'Отправка заявки не запускает платный подбор.',
+ 'hero.boardTitle':'Примеры заявок','ex':'Пример',
+ 'hero.c1':'Старт: до 7 дней','hero.c2':'Старт: срочно','hero.c3':'Старт: до 14 дней',
+ 'hero.hint':'Нажмите на пример — он заполнит анкету.',
+ 'city.hh':'Гамбург','city.rtm':'Роттердам','city.ant':'Антверпен',
+ 'c.de':'Германия','c.nl':'Нидерланды','c.be':'Бельгия',
+ 'strip.countries':'Германия · Нидерланды · Бельгия','strip.sectors':'Стройка • Монтаж • Промышленность','strip.scale':'1 специалист или целая бригада','strip.proj':'Подбор под конкретный проект',
+ 'prob.h1':'Объект есть.','prob.h2':'Сроки идут.','prob.h3':'Людей не хватает.',
+ 'prob.1':'Стартует новый объект, а бригады не хватает.','prob.2':'Кто-то отказался или не доехал.',
+ 'prob.3':'Нет времени неделями искать людей по чатам и объявлениям.',
+ 'prob.close':'Скажите, кто вам нужен. Подбором займёмся мы.',
+ 'spec.h':'Кого мы можем для вас найти?','spec.p':'Отметьте специальности — они сразу добавятся в вашу заявку.',
+ 'spec.sel':'Выбрано специальностей: {n}. Остальное укажите в анкете.','spec.go':'Перейти к анкете',
+ 'spec.miss':'Не нашли нужную специальность?','spec.missP':'Опишите, кто вам нужен, — ищем и другие профили.',
+ 'how.h':'Как это работает?',
+ 'how.1t':'Вы говорите, кто нужен','how.1d':'Специальность, количество, объект, дата выхода и главные требования.',
+ 'how.2t':'Ищем и проводим предварительный отбор','how.2d':'Связываемся с кандидатами и выясняем то, что важно для вашего проекта.',
+ 'how.3t':'Вы получаете подходящих кандидатов','how.3d':'Получаете информацию о людях, которые подходят под согласованные требования, и сами решаете, с кем говорить дальше.',
+ 'how.foot':'Условия подбора согласуем до начала поиска.',
+ 'qual.h':'Не присылаем вам случайные номера.',
+ 'qual.p':'Прежде чем передать кандидата, мы проводим с ним предварительный разговор и выясняем всё, что важно под вашу заявку.',
+ 'qual.chips':['специальность','опыт','доступность','когда может выйти','где находится сейчас','готовность к выезду','язык','водительские права','автомобиль','документы — если нужны','сертификаты — если нужны'],
+ 'qual.honest':'Информацию мы получаем в предварительном разговоре с кандидатом. Окончательную оценку и решение о сотрудничестве принимает клиент.',
+ 'qual.cardAria':'Пример профиля кандидата','qual.ex':'Пример профиля','qual.head':'7 лет опыта',
+ 'qual.r2':'Опыт в Германии','qual.v2':'3 года','qual.r3':'Доступность','qual.v3':'с 01.10',
+ 'qual.r4':'Где находится','qual.v4':'Польша','qual.r5':'Язык','qual.v5':'немецкий, рабочий','qual.r6':'Права','qual.r7':'Автомобиль','qual.r8':'Готов к выезду',
+ 'pay.h1':'Платите за подбор.','pay.h2':'Не за каждый час работы.',
+ 'pay.oneL':'Разовая оплата','pay.oneS':'за подбор',
+ 'pay.zero':'0 € / ч','pay.zeroL':'постоянной почасовой комиссии OnlyStaff','pay.zeroS':'после завершения подбора',
+ 'pay.p':'Мы согласуем разовую оплату за услугу подбора. После завершения подбора OnlyStaff не начисляет постоянную комиссию за часы работы нанятого человека.',
+ 'calc.toggle':'Посмотреть пример стоимости почасовой маржи','calc.w':'Количество работников','calc.hrs':'Часов в месяц','calc.r':'Условная маржа €/ч','calc.rEx':'(пример для расчёта)',
+ 'calc.m':'В месяц','calc.y':'В год',
+ 'calc.disc':'Это только математический пример, показывающий, как работает почасовая маржа. Реальные условия предложений могут отличаться.',
+ 'less':'Меньше','more':'Больше','remove':'Удалить','qtyOf':'Количество: {r}',
+ 'why.h':'Почему OnlyStaff?',
+ 'why.1t':'Знаем отрасль','why.1d':'Стройка, инженерные системы, металл и промышленность. Понимаем разницу между Trockenbau и штукатуркой, между WIG и MAG.',
+ 'why.2t':'Ищем под конкретный проект','why.2d':'Не продаём доступ к случайной базе. Ищем людей по согласованным требованиям.',
+ 'why.3t':'От одного человека до целой бригады','why.3d':'Объём подбора подстраиваем под реальную потребность компании.',
+ 'why.4d':'Фокус на специалистах для проектов в Германии, Нидерландах и Бельгии.',
+ 'about.h':'Подбираем людей в отрасль, которую знаем на практике.',
+ 'about.p1':'OnlyStaff специализируется на строительных, монтажных и технических специалистах для проектов в Западной Европе.',
+ 'about.p2':'Мы каждый день работаем с такими профилями, как Trockenbauer, электрик, монтажник, слесарь, сварщик WIG/MAG или трубомонтажник. Поэтому уже в первом разговоре знаем, о чём спросить кандидата.',
+ 'form.h':'Скажите, кто вам нужен.','form.p':'4 коротких шага. Сначала мы подтвердим заявку и условия сотрудничества, и только потом начнём подбор.',
+ 'form.step':'Шаг {n} из 4','opt':'(необязательно)',
+ 's1.h':'Где находится объект?','s1.city':'Город или индекс','s1.cityPh':'например, Гамбург',
+ 's2.h':'Кто вам нужен?','s2.label':'Введите специальность','s2.ph':'Например, сварщик…','s2.custom':'Добавить: «{q}»','s2.customSub':'Другая специальность',
+ 's3.h':'Когда люди должны выйти на объект?','s3.o1':'Как можно скорее','s3.o2':'В течение 7 дней','s3.o3':'В течение 14 дней','s3.o4':'Позже',
+ 's3.skip':'Дополнительные вопросы можно пропустить — уточним их в разговоре.',
+ 's3.lang':'Язык','s3.lNone':'Не обязателен','s3.lDe':'Немецкий','s3.lEn':'Английский',
+ 's3.car':'Нужна своя машина?','s3.house':'Жильё предоставляете?','yes':'Да','no':'Нет','tbd':'Обсудим',
+ 's3.notes':'Дополнительные требования','s3.notesPh':'например, Knauf, SCC, работа на высоте',
+ 's4.h':'Как с вами связаться?','s4.company':'Компания','s4.name':'Имя','s4.phone':'Телефон','s4.email':'E-mail',
+ 's4.phoneHint':'Мы позвоним, чтобы уточнить детали заявки и условия подбора.',
+ 's4.consent':'Согласен(на) на обработку моих данных для работы с заявкой в соответствии с {privacy}.','s4.privacy':'политикой конфиденциальности',
+ 'b.back':'Назад','b.next':'Дальше','b.submit':'Отправить заявку','b.sending':'Отправляем…',
+ 'e.country':'Выберите страну объекта.','e.roles':'Добавьте хотя бы одну специальность.','e.start':'Выберите, когда люди должны выйти.',
+ 'e.company':'Укажите название компании.','e.name':'Укажите имя.','e.phone':'Укажите телефон с кодом страны, например +48 600 000 000.','e.consent':'Отметьте согласие на обработку данных.',
+ 'e.send':'Не удалось отправить анкету. Попробуйте ещё раз чуть позже.','e.sendAlt':'Не удалось отправить анкету. Попробуйте ещё раз или свяжитесь с нами напрямую:',
+ 'e.config':'Анкета временно недоступна.','e.configAlt':'Анкета временно недоступна. Свяжитесь с нами напрямую:',
+ 'ok.h':'Заявка получена.','ok.p':'Мы свяжемся с вами, чтобы уточнить детали и озвучить условия подбора.','ok.wa':'Дописать детали в WhatsApp',
+ 'side.h':'Что будет после отправки?','side.1':'Подтверждаем заявку.','side.2':'Согласуем условия подбора.','side.3':'Начинаем поиск кандидатов.',
+ 'side.talkH':'Удобнее поговорить?',
+ 'faq.h':'Частые вопросы',
+ 'faq':[
+  ['Сколько стоит подбор?','Зависит от профиля, количества людей и условий подбора. После получения заявки мы озвучиваем условия — до начала поиска.'],
+  ['Когда нужно платить?','Все условия, включая момент оплаты, согласуем до начала подбора.'],
+  ['Как быстро вы найдёте людей?','Зависит от специальности, количества, локации, требований и текущей доступности кандидатов. Реальный срок назовём после разбора заявки.'],
+  ['Я плачу комиссию за часы работы?','Нет. При прямом подборе вы платите за услугу один раз. После её завершения OnlyStaff не начисляет постоянную комиссию за часы работы нанятого человека.'],
+  ['Можете найти целую бригаду?','Да. Ищем и отдельных специалистов, и нескольких людей одной или разных специальностей.'],
+  ['Как проходит предварительный отбор?','Мы разговариваем с кандидатом и уточняем опыт, доступность, дату выхода, где он находится, язык, права, а при необходимости — документы и сертификаты. Окончательное решение за вами.'],
+  ['Что, если кандидат откажется?','Все условия согласуем до начала подбора.']
+ ],
+ 'fin.h1':'Есть объект?','fin.h2':'Поиском людей займёмся мы.','fin.p':'Скажите, кто вам нужен, сколько человек, куда и с какого числа.',
+ 'ft.tag':'Подбор строительных и технических специалистов на проекты в Германии, Нидерландах и Бельгии.',
+ 'ft.contact':'Контакты','ft.phone':'Телефон','ft.company':'Данные компании',
+ 'ft.imp':'Impressum / Данные компании','ft.priv':'Политика конфиденциальности','ft.cookies':'Cookies',
+ 'svc':'Подбор строительных и технических специалистов',
+ 'wa.msg':'Здравствуйте, ищу работников на объект.',
+ 'wa.msgForm':'Здравствуйте, я отправил заявку через сайт ({s}). Хочу добавить детали.'
+}};
+
+/* ================= HELPERS ================= */
+let LANG = 'pl';
+const t = (k, vars) => { let s = (I18N[LANG][k] ?? I18N.pl[k] ?? k); if (vars && typeof s==='string') for (const v in vars) s = s.split('{'+v+'}').join(vars[v]); return s; };
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const specName = it => LANG==='ru' ? it.ru : it.pl;
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reduced = () => matchMedia('(prefers-reduced-motion:reduce)').matches;
+const base = () => CONFIG.siteUrl.replace(/\/+$/,'');
+const ICON = (n, cls) => `<svg class="i${cls?' '+cls:''}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+
+/* ================= ATTRIBUTION (UTM / gclid / fbclid) ================= */
+const ATTR = (() => {
+  let o = {};
+  try { o = JSON.parse(sessionStorage.getItem('os_attr')||'{}'); } catch(e){}
+  try { new URLSearchParams(location.search).forEach((v,k) => { if (/^(utm_[a-z_]+|gclid|fbclid)$/.test(k)) o[k] = v.slice(0,200); }); } catch(e){}
+  try { sessionStorage.setItem('os_attr', JSON.stringify(o)); } catch(e){}
+  return o;
+})();
+
+/* ================= LANGUAGE ================= */
+function initLang(){
+  let l = null;
+  const m = location.pathname.match(/\/(pl|ru)(\/|$)/);
+  if (m) l = m[1];
+  try { const q = new URLSearchParams(location.search).get('lang'); if (q) l = q; } catch(e){}
+  if (!l) { try { l = localStorage.getItem('os_lang'); } catch(e){} }
+  applyLang(l === 'ru' ? 'ru' : 'pl', false);
+}
+function applyLang(l, user){
+  LANG = l;
+  document.documentElement.lang = l;
+  $$('[data-i18n]').forEach(el => { const v = t(el.dataset.i18n); if (typeof v==='string') el.textContent = v; });
+  $$('[data-i18n-html]').forEach(el => el.innerHTML = t(el.dataset.i18nHtml));
+  $$('[data-i18n-ph]').forEach(el => el.placeholder = t(el.dataset.i18nPh));
+  $$('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', t(el.dataset.i18nAria)));
+  $$('.seg-lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang===l)));
+  document.title = t('meta.title');
+  $('meta[name="description"]').content = t('meta.desc');
+  $('#ogTitle').content = t('og.title'); $('#ogDesc').content = t('og.desc');
+  $('#ogLocale').content = l==='ru' ? 'ru_RU' : 'pl_PL';
+  $('#ogLocaleAlt').content = l==='ru' ? 'pl_PL' : 'ru_RU';
+  const url = base() + '/' + l + '/';
+  $('#canonical').href = url; $('#ogUrl').content = url;
+  $('#hlPl').href = base()+'/pl/'; $('#hlRu').href = base()+'/ru/'; $('#hlDef').href = base()+'/pl/';
+  renderChips(); renderSpecs(); renderQuick(); renderRoles(); renderFaq(); renderConsent(); renderLd(); updateCalc(false); updateProg(); updateContacts(); updateSpecSel();
+  try { localStorage.setItem('os_lang', l); } catch(e){}
+  if (user){
+    try {
+      const u = new URL(location.href);
+      if (/\/(pl|ru)(\/|$)/.test(u.pathname)) { u.pathname = u.pathname.replace(/\/(pl|ru)(\/|$)/, '/'+l+'$2'); u.searchParams.delete('lang'); }
+      else u.searchParams.set('lang', l);
+      history.replaceState(null,'',u);
+    } catch(e){}
+    track('language_change', {to:l});
+  }
+}
+$$('.seg-lang button').forEach(b => b.addEventListener('click', () => { if (b.dataset.lang!==LANG) applyLang(b.dataset.lang, true); }));
+
+/* ================= RENDER ================= */
+function renderChips(){ $('#chips').innerHTML = t('qual.chips').map(c => `<li>${ICON('check')}${esc(c)}</li>`).join(''); }
+function renderSpecs(){
+  $('#specGrid').innerHTML = SPECS.map(g => `<div class="sg"><h3>${esc(LANG==='ru'?g.ru:g.pl)}</h3><div class="sg-chips">${
+    g.items.map(it => `<button type="button" class="chip" data-spec="${it.id}" aria-pressed="${roles.some(r=>r.id===it.id)}">${ICON('plus','ic-plus')}${ICON('check','ic-check')}<span>${esc(specName(it))} <small>${esc(it.de)}</small></span></button>`).join('')
+  }</div></div>`).join('');
+}
+function syncSpecButtons(){ $$('#specGrid [data-spec]').forEach(b => b.setAttribute('aria-pressed', String(roles.some(r=>r.id===b.dataset.spec)))); updateSpecSel(); }
+function updateSpecSel(){
+  const n = roles.length;
+  $('#specSel').hidden = n===0;
+  $('#specSelTxt').textContent = t('spec.sel',{n});
+}
+function renderFaq(){ $('#faqList').innerHTML = t('faq').map(([q,a]) => `<details><summary><span>${esc(q)}</span><span class="pm" aria-hidden="true"></span></summary><p>${esc(a)}</p></details>`).join(''); }
+function renderConsent(){
+  const label = esc(t('s4.privacy'));
+  const link = CONFIG.privacyUrl ? `<a href="${esc(CONFIG.privacyUrl)}" target="_blank" rel="noopener">${label}</a>` : label;
+  $('#consentTxt').innerHTML = esc(t('s4.consent')).replace('{privacy}', link);
+}
+function renderLd(){
+  const org = {"@type":"Organization","@id":base()+"/#org","name":"OnlyStaff","url":base()+"/"};
+  const cp = {};
+  if (CONFIG.phone) cp.telephone = CONFIG.phone;
+  if (CONFIG.email) cp.email = CONFIG.email;
+  if (Object.keys(cp).length) org.contactPoint = Object.assign({"@type":"ContactPoint","contactType":"sales","availableLanguage":["pl","ru"]}, cp);
+  const ld = {"@context":"https://schema.org","@graph":[
+    org,
+    {"@type":"Service","name":t('svc'),"serviceType":t('svc'),"provider":{"@id":base()+"/#org"},
+     "areaServed":[{"@type":"Country","name":"Germany"},{"@type":"Country","name":"Netherlands"},{"@type":"Country","name":"Belgium"}],
+     "description":t('meta.desc'),"inLanguage":LANG,"url":base()+'/'+LANG+'/'},
+    {"@type":"FAQPage","inLanguage":LANG,"url":base()+'/'+LANG+'/',"mainEntity":t('faq').map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))}
+  ]};
+  $('#ld').textContent = JSON.stringify(ld);
+}
+
+/* ================= CONTACTS / LEGAL ================= */
+const waHref = msg => 'https://wa.me/' + CONFIG.whatsapp.replace(/\D/g,'') + '?text=' + encodeURIComponent(msg);
+function updateContacts(){
+  const hasWa = !!CONFIG.whatsapp.replace(/\D/g,''), hasTel = !!CONFIG.phone, hasMail = !!CONFIG.email;
+  $$('.js-wa').forEach(a => {
+    a.hidden = !hasWa;
+    if (hasWa){ a.href = waHref(a.dataset.wa==='form' ? t('wa.msgForm',{s:summaryText()}) : t('wa.msg')); a.target='_blank'; a.rel='noopener'; }
+    else a.removeAttribute('href');
+  });
+  $$('.js-tel').forEach(a => { a.hidden = !hasTel; if (hasTel) a.href = 'tel:' + CONFIG.phone.replace(/[^\d+]/g,''); else a.removeAttribute('href'); });
+  $$('.js-mail').forEach(a => { a.hidden = !hasMail; if (hasMail) a.href = 'mailto:' + CONFIG.email; else a.removeAttribute('href'); });
+  $$('.js-phone-txt2').forEach(e => e.textContent = CONFIG.phone);
+  $$('.js-mail-txt').forEach(e => e.textContent = CONFIG.email);
+  $$('.js-tel .js-phone-txt').forEach(e => e.textContent = CONFIG.phone || t('cta.call'));
+  $('#talkBox').hidden = !(hasWa || hasTel);
+  $('#ftContact').hidden = !(hasWa || hasTel || hasMail);
+  $$('.js-noobl').forEach(e => { if (!CONFIG.showNoObligationNote) e.hidden = true; });
+  [['#lnkImp','impressumUrl'],['#lnkPriv','privacyUrl'],['#lnkCook','cookiesUrl']].forEach(([s,k]) => { const a = $(s); a.hidden = !CONFIG[k]; if (CONFIG[k]) a.href = CONFIG[k]; else a.removeAttribute('href'); });
+  $('#ftCompany').textContent = CONFIG.company;
+  $('#ftCompany').hidden = !CONFIG.company;
+  $('#ftLegal').hidden = !(CONFIG.company || CONFIG.impressumUrl || CONFIG.privacyUrl || CONFIG.cookiesUrl);
+}
+document.addEventListener('click', e => {
+  const wa = e.target.closest('.js-wa[href]'); if (wa) track('whatsapp_click', {place: wa.dataset.place||''});
+  const tel = e.target.closest('.js-tel[href]'); if (tel) track('phone_click', {place: tel.dataset.place||''});
+  const cta = e.target.closest('[data-cta]');
+  if (cta){
+    const p = cta.dataset.cta;
+    track(p==='sticky' ? 'sticky_cta_click' : p==='hero' ? 'hero_cta_click' : 'cta_click', {place:p});
+    if (cta.dataset.focusSearch){ show(2); setTimeout(() => $('#roleSearch').focus({preventScroll:true}), reduced()?0:450); }
+  }
+});
+
+/* ================= HEADER / MENU / STICKY ================= */
+const hdr = $('#hdr');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 8), {passive:true});
+const menuBtn = $('#menuBtn'), nav = $('#nav');
+function closeMenu(){ nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
+menuBtn.addEventListener('click', () => { const o = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(o)); });
+nav.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
+document.addEventListener('keydown', e => { if (e.key==='Escape' && nav.classList.contains('open')){ closeMenu(); menuBtn.focus(); } });
+document.addEventListener('click', e => { if (nav.classList.contains('open') && !e.target.closest('#nav') && !e.target.closest('#menuBtn')) closeMenu(); });
+
+const sticky = $('#sticky');
+let heroVis = true, formVis = false, finalVis = false;
+function updSticky(){
+  const show = !heroVis && !formVis && !finalVis;
+  sticky.classList.toggle('show', show);
+  sticky.setAttribute('aria-hidden', String(!show));
+  $$('a', sticky).forEach(a => a.tabIndex = show ? 0 : -1);
+  document.body.classList.toggle('has-sticky', show);
+}
+if ('IntersectionObserver' in window){
+  new IntersectionObserver(es => { heroVis = es[0].isIntersecting; updSticky(); }).observe($('.hero .cta-row'));
+  new IntersectionObserver(es => { formVis = es[0].isIntersecting; updSticky(); }).observe($('#zapotrzebowanie'));
+  new IntersectionObserver(es => { finalVis = es[0].isIntersecting; updSticky(); }).observe($('.final'));
+}
+
+/* ================= CALCULATOR ================= */
+const fmt = n => new Intl.NumberFormat(LANG==='ru'?'ru-RU':'pl-PL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
+function clampInput(el){ const v = Math.round(+el.value||0); el.value = Math.min(+el.max, Math.max(+el.min, v)); }
+function updateCalc(user){
+  const w = Math.max(0,+$('#cW').value||0), h = Math.max(0,+$('#cH').value||0), r = +(($('input[name="cR"]:checked')||{}).value||0);
+  const m = w*h*r;
+  $('#oM').textContent = fmt(m); $('#oY').textContent = fmt(m*12);
+  if (user) trackOnce('cost_calculator_used', {workers:w, hours:h, rate:r});
+}
+$$('[data-calc]').forEach(b => b.addEventListener('click', () => {
+  const [id, d] = b.dataset.calc.split(':'); const el = document.getElementById(id);
+  el.value = (+el.value||0) + (+d); clampInput(el); updateCalc(true);
+}));
+['#cW','#cH'].forEach(s => { $(s).addEventListener('input', () => updateCalc(true)); $(s).addEventListener('change', e => { clampInput(e.target); updateCalc(true); }); });
+$$('input[name="cR"]').forEach(r => r.addEventListener('change', () => updateCalc(true)));
+
+/* ================= FORM ================= */
+const form = $('#leadForm');
+let step = 1;
+const roles = []; // {id, custom, qty}
+const roleLabel = r => r.custom ? r.custom : specName(ALL.find(i=>i.id===r.id));
+const roleSub = r => r.custom ? t('s2.customSub') : ALL.find(i=>i.id===r.id).de;
+
+function markStart(){ trackOnce('form_start'); }
+form.addEventListener('focusin', markStart);
+form.addEventListener('change', markStart);
+
+function updateProg(){
+  $('#progBar').style.width = (step*25) + '%';
+  $('#progT').textContent = t('form.step',{n:step});
+}
+function clearErr(){ $('#formErr').textContent=''; $('#errAlt').hidden = true; $$('[aria-invalid]', form).forEach(e=>e.removeAttribute('aria-invalid')); }
+function show(n){
+  step = n;
+  $$('.fstep').forEach(s => s.classList.toggle('on', +s.dataset.step===n));
+  $('#bBack').hidden = n===1; $('#bNext').hidden = n===4; $('#bSubmit').hidden = n!==4;
+  $('#submitNote').hidden = n!==4 || !CONFIG.showNoObligationNote;
+  clearErr(); updateProg();
+}
+function err(msg, el){ $('#formErr').textContent = msg; if (el){ el.setAttribute('aria-invalid','true'); el.focus(); } return false; }
+function validate(n){
+  clearErr();
+  const fd = new FormData(form);
+  if (n===1 && !fd.get('country')) return err(t('e.country'), $('input[name="country"]'));
+  if (n===2 && !roles.length) return err(t('e.roles'), $('#roleSearch'));
+  if (n===3 && !fd.get('start')) return err(t('e.start'), $('input[name="start"]'));
+  if (n===4){
+    if (!String(fd.get('company')).trim()) return err(t('e.company'), form.elements.company);
+    if (!String(fd.get('name')).trim()) return err(t('e.name'), form.elements.name);
+    const ph = String(fd.get('phone')).replace(/[\s\-().\/]/g,'');
+    if (!/^\+?\d{9,15}$/.test(ph)) return err(t('e.phone'), form.elements.phone);
+    if (!form.elements.consent.checked) return err(t('e.consent'), form.elements.consent);
+  }
+  return true;
+}
+$('#bNext').addEventListener('click', () => {
+  if (!validate(step)) return;
+  trackOnce('form_step_' + step);
+  show(step+1);
+  const card = $('.fcard'); const top = card.getBoundingClientRect().top;
+  if (top < 0 || top > innerHeight*0.4) card.scrollIntoView({block:'start', behavior: reduced()?'auto':'smooth'});
+  const q = $('.fstep.on .q'); if (q){ q.setAttribute('tabindex','-1'); q.focus({preventScroll:true}); }
+});
+$('#bBack').addEventListener('click', () => show(step-1));
+form.addEventListener('keydown', e => {
+  if (e.key==='Enter' && e.target.tagName==='INPUT' && e.target.id!=='roleSearch' && e.target.type!=='checkbox' && step<4){ e.preventDefault(); $('#bNext').click(); }
+});
+$$('input[name="country"], input[name="start"]').forEach(r => r.addEventListener('change', clearErr));
+$$('input[name="lang"]').forEach(c => c.addEventListener('change', () => {
+  if (c.value==='none' && c.checked) $$('input[name="lang"]').forEach(o => { if (o!==c) o.checked=false; });
+  if (c.value!=='none' && c.checked) $('input[name="lang"][value="none"]').checked=false;
+}));
+
+/* role picker */
+const rs = $('#roleSearch'), rl = $('#roleList');
+let act = -1;
+const norm = s => s.replace(/\u00AD/g,'').toLowerCase().replace(/ł/g,'l').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ё/g,'е');
+function addRole(id, custom, qty){
+  const ex = roles.find(r => (id && r.id===id) || (custom && r.custom && norm(r.custom)===norm(custom)));
+  if (ex) ex.qty = Math.min(99, Math.max(ex.qty, qty||ex.qty));
+  else roles.push({id:id||null, custom:custom||null, qty:qty||1});
+  renderRoles(); clearErr();
+}
+function removeRole(id){ const i = roles.findIndex(r=>r.id===id); if (i>-1){ roles.splice(i,1); renderRoles(); } }
+function renderRoles(){
+  $('#roles').innerHTML = roles.map((r,i) => { const lab = esc(roleLabel(r)); return `<li><span class="rn">${lab}<small>${esc(roleSub(r))}</small></span>
+    <span class="stepper"><button type="button" data-rq="${i}:-1" aria-label="${esc(t('less'))}: ${lab}">${ICON('minus')}</button><input type="number" inputmode="numeric" min="1" max="99" value="${r.qty}" data-ri="${i}" aria-label="${esc(t('qtyOf',{r:roleLabel(r)}))}"><button type="button" data-rq="${i}:1" aria-label="${esc(t('more'))}: ${lab}">${ICON('plus')}</button></span>
+    <button type="button" class="icon-btn" data-rr="${i}" aria-label="${esc(t('remove'))}: ${lab}">${ICON('x')}</button></li>`; }).join('');
+  renderQuick(); syncSpecButtons();
+}
+$('#roles').addEventListener('click', e => {
+  const q = e.target.closest('[data-rq]'), rm = e.target.closest('[data-rr]');
+  if (q){ const [i,d] = q.dataset.rq.split(':').map(Number); roles[i].qty = Math.min(99, Math.max(1, roles[i].qty + d)); renderRoles(); const b = $(`[data-rq="${i}:${d}"]`); if (b) b.focus(); }
+  if (rm){ roles.splice(+rm.dataset.rr,1); renderRoles(); rs.focus(); }
+});
+$('#roles').addEventListener('change', e => { const i = e.target.dataset.ri; if (i!=null){ roles[i].qty = Math.min(99, Math.max(1, Math.round(+e.target.value||1))); renderRoles(); } });
+function renderQuick(){
+  $('#quick').innerHTML = QUICK.filter(id => !roles.some(r=>r.id===id)).map(id => { const it = ALL.find(x=>x.id===id); return `<button type="button" data-q="${id}">${ICON('plus')}${esc(specName(it))}</button>`; }).join('');
+}
+$('#quick').addEventListener('click', e => { const b = e.target.closest('[data-q]'); if (b) addRole(b.dataset.q); });
+function openList(){
+  const q = rs.value.trim(), nq = norm(q);
+  const res = (q ? ALL.filter(i => norm(i.pl+' '+i.ru+' '+i.de).includes(nq)) : ALL).slice(0, q?8:40);
+  let html = res.map((i,idx) => `<button type="button" role="option" id="opt${idx}" data-add="${i.id}"><span>${esc(specName(i))}</span><small>${esc(i.de)}</small></button>`).join('');
+  if (q && !res.some(i => norm(specName(i))===nq)) html += `<button type="button" role="option" id="optc" data-custom="1"><span>${esc(t('s2.custom',{q}))}</span><small>${esc(t('s2.customSub'))}</small></button>`;
+  rl.innerHTML = html; rl.classList.add('open'); rs.setAttribute('aria-expanded','true'); act = -1; rs.removeAttribute('aria-activedescendant');
+}
+function closeList(){ rl.classList.remove('open'); rs.setAttribute('aria-expanded','false'); rs.removeAttribute('aria-activedescendant'); }
+rs.addEventListener('focus', openList);
+rs.addEventListener('input', openList);
+rs.addEventListener('keydown', e => {
+  const opts = $$('button', rl);
+  if (e.key==='ArrowDown'){ e.preventDefault(); if (!rl.classList.contains('open')) openList(); act = Math.min(opts.length-1, act+1); }
+  else if (e.key==='ArrowUp'){ e.preventDefault(); act = Math.max(0, act-1); }
+  else if (e.key==='Enter'){ e.preventDefault(); const o = opts[act>=0?act:0]; if (o && rs.value.trim()) o.click(); else if (act>=0 && o) o.click(); return; }
+  else if (e.key==='Escape'){ closeList(); return; }
+  else return;
+  opts.forEach((o,i)=>{ o.classList.toggle('act', i===act); o.setAttribute('aria-selected', String(i===act)); });
+  if (opts[act]){ rs.setAttribute('aria-activedescendant', opts[act].id); opts[act].scrollIntoView({block:'nearest'}); }
+});
+rl.addEventListener('mousedown', e => e.preventDefault());
+rl.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.add) addRole(b.dataset.add); else { const c = rs.value.trim().slice(0,60); if (c) addRole(null, c); }
+  rs.value=''; closeList();
+});
+document.addEventListener('click', e => { if (!e.target.closest('.combo')) closeList(); });
+
+/* specialties section → picker */
+$('#specGrid').addEventListener('click', e => {
+  const b = e.target.closest('[data-spec]'); if (!b) return;
+  const id = b.dataset.spec;
+  if (roles.some(r=>r.id===id)) removeRole(id); else { addRole(id); track('specialty_click', {specialty:id}); }
+  markStart();
+});
+
+/* hero examples → prefill */
+function goForm(){ $('#zapotrzebowanie').scrollIntoView({behavior: reduced()?'auto':'smooth'}); }
+$$('[data-prefill]').forEach(b => b.addEventListener('click', () => {
+  const p = JSON.parse(b.dataset.prefill);
+  if (p.country) form.querySelector(`input[name="country"][value="${p.country}"]`).checked = true;
+  if (p.cityKey) form.elements.city.value = t(p.cityKey);
+  if (p.role) addRole(p.role, null, p.qty);
+  if (p.start) form.querySelector(`input[name="start"][value="${p.start}"]`).checked = true;
+  track('example_prefill', {example:p.role});
+  markStart(); show(1); goForm();
+}));
+
+/* summary + submit */
+function summaryText(){
+  const fd = new FormData(form);
+  const parts = roles.map(r => r.qty + '× ' + (r.id ? ALL.find(i=>i.id===r.id).de : r.custom));
+  return [parts.join(', '), fd.get('country'), String(fd.get('city')||'').trim()].filter(Boolean).join(', ');
+}
+function showAlt(){
+  const box = $('#errAlt'); box.innerHTML = '';
+  if (CONFIG.whatsapp) box.insertAdjacentHTML('beforeend', `<a class="btn btn-secondary js-wa" data-place="form_error" data-wa="form" href="${waHref(t('wa.msgForm',{s:summaryText()}))}" target="_blank" rel="noopener">${ICON('wa','i-wa')}WhatsApp</a>`);
+  if (CONFIG.phone) box.insertAdjacentHTML('beforeend', `<a class="btn btn-secondary js-tel" data-place="form_error" href="tel:${CONFIG.phone.replace(/[^\d+]/g,'')}">${ICON('phone')}${esc(CONFIG.phone)}</a>`);
+  if (CONFIG.email) box.insertAdjacentHTML('beforeend', `<a class="btn btn-secondary" href="mailto:${esc(CONFIG.email)}">${esc(CONFIG.email)}</a>`);
+  box.hidden = !box.children.length;
+  return !!box.children.length;
+}
+let sending = false;
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (sending) return;
+  if (step !== 4) { $('#bNext').click(); return; }
+  if (!validate(4)) return;
+  const fd = new FormData(form);
+  if (String(fd.get('website')||'')) return; // honeypot
+  const payload = {
+    lang: LANG, country: fd.get('country'), city: String(fd.get('city')||'').trim(),
+    roles: roles.map(r => ({specialty: r.id || 'custom', label_de: r.id ? ALL.find(i=>i.id===r.id).de : null, label: roleLabel(r).replace(/\u00AD/g,''), qty: r.qty})),
+    headcount: roles.reduce((a,r)=>a+r.qty,0),
+    start: fd.get('start'), languages: fd.getAll('lang'), car_required: form.elements.car.checked ? 'yes' : 'no', housing: fd.get('housing'),
+    notes: String(fd.get('notes')||'').trim(),
+    company: String(fd.get('company')).trim(), name: String(fd.get('name')).trim(), phone: String(fd.get('phone')).trim(), email: String(fd.get('email')||'').trim(),
+    consent: true, page: location.href, referrer: document.referrer || null, attribution: ATTR, submitted_at: new Date().toISOString()
+  };
+  if (!CONFIG.formEndpoint && !CONFIG.demoMode){
+    console.error('[OnlyStaff] CONFIG.formEndpoint is empty and demoMode=false — lead NOT sent.');
+    $('#formErr').textContent = showAlt() ? t('e.configAlt') : t('e.config');
+    return;
+  }
+  const btn = $('#bSubmit'), btxt = $('#bSubmitTxt'); sending = true; btn.disabled = true; btxt.textContent = t('b.sending');
+  try {
+    if (CONFIG.formEndpoint){
+      const ctrl = new AbortController(); const to = setTimeout(() => ctrl.abort(), 15000);
+      /* Google Apps Script не отдаёт CORS-заголовки, поэтому используем no-cors —
+         браузер не может прочитать статус ответа (response всегда "opaque"),
+         успехом считаем сам факт того, что запрос ушёл без сетевой ошибки. */
+      await fetch(CONFIG.formEndpoint, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(payload), signal: ctrl.signal});
+      clearTimeout(to);
+    } else {
+      console.info('[OnlyStaff] DEMO MODE — lead not sent anywhere:', payload);
+    }
+    track('form_submit', {country: payload.country, roles: payload.roles.length, headcount: payload.headcount, start: payload.start, demo: !CONFIG.formEndpoint});
+    $('#formBody').hidden = true; const d = $('#formDone'); d.hidden = false; updateContacts(); d.focus();
+  } catch(ex){
+    console.error('[OnlyStaff] submit error', ex);
+    $('#formErr').textContent = showAlt() ? t('e.sendAlt') : t('e.send');
+  } finally { sending = false; btn.disabled = false; btxt.textContent = t('b.submit'); }
+});
+
+/* ================= INIT ================= */
+$('#yr').textContent = new Date().getFullYear();
+initLang();
+show(1);
+if (matchMedia('(min-width:900px)').matches) $('#kalkulator').open = true;
+</script>
+</body>
+</html>
