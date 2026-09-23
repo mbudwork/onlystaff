@@ -11,7 +11,7 @@ google-apps-script/Code.gs     — приём заявок в Google Табли�
 assets/favicon.svg, apple-touch-icon.png, og-image.jpg — сделаны как рабочая
                                   заглушка в цветах сайта (тёмно-синий #0E151D + акцент #2445D6),
                                   замените на брендовые, когда будут
-privacy.html, impressum.html   — готовы, на данных MBUD sp. z o.o.
+privacy.html, impressum.html   — готовы, на данных Only Staff sp. z o.o.
 ```
 
 Важно: `index.html`, `pl/index.html` и `ru/index.html` — три отдельных файла.
@@ -23,7 +23,7 @@ privacy.html, impressum.html   — готовы, на данных MBUD sp. z o.
 
 - Домен `onlystaff.pl` — canonical, hreflang, og:url, `CONFIG.siteUrl`
 - `CONFIG.company`, `email`, `privacyUrl`, `impressumUrl`, `cookiesUrl` — заполнены
-- `privacy.html` и `impressum.html` — на данных MBUD sp. z o.o. (то же юрлицо, что в MBUD START),
+- `privacy.html` и `impressum.html` — на данных Only Staff sp. z o.o. (KRS 0001189049, NIP 6793338977, REGON 542465506, Kraków),
   стандартные формулировки по DSGVO/RODO, как в прошлом проекте
 - `og:image` подключен на сгенерированный файл-заглушку
 - **Реализована реальная раздача /pl/ и /ru/** (раньше это был открытый пункт в README —

@@ -304,17 +304,6 @@ section{padding:var(--s8) 0}
 .pay-p{margin-top:var(--s5);color:var(--text-secondary);max-width:62ch}
 .pay-r .pay-p{margin-top:var(--s4)}
 
-.calc{margin-top:var(--s4);background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg)}
-.calc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:var(--s3);min-height:var(--h-control);padding:0 var(--s4);font-size:15px;font-weight:600;border-radius:var(--r-lg)}
-.calc summary::-webkit-details-marker{display:none}
-.calc summary .i{color:var(--text-tertiary)}
-.calc summary .chev{margin-left:auto;width:18px;height:18px;transition:transform var(--t) var(--ease)}
-.calc[open] summary .chev{transform:rotate(180deg)}
-.calc-body{padding:0 var(--s4) var(--s4)}
-.calc-ctrls{display:flex;flex-wrap:wrap;gap:var(--s4) var(--s5);align-items:flex-end;padding-top:var(--s2);border-top:1px solid var(--border)}
-.fld{padding-top:var(--s3)}
-.fld>label,.fld>.lbl{display:block;font-size:12.5px;font-weight:500;color:var(--text-secondary);margin-bottom:6px}
-.fld .lbl em{font-style:normal;color:var(--text-tertiary)}
 .stepper{display:inline-flex;align-items:center;height:var(--h-touch);border:1px solid var(--border-strong);border-radius:10px;background:var(--surface);overflow:hidden}
 .stepper button{width:40px;height:100%;border:0;background:none;cursor:pointer;display:grid;place-items:center;color:var(--text-secondary);transition:background var(--t),color var(--t)}
 .stepper button:hover{background:var(--surface-secondary);color:var(--text-primary)}
@@ -323,17 +312,6 @@ section{padding:var(--s8) 0}
 .stepper input{width:48px;height:100%;text-align:center;border:0;background:none;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;-moz-appearance:textfield;padding:0}
 .stepper input:focus{outline:none;background:var(--accent-soft)}
 .stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-.segs{display:inline-flex;height:var(--h-touch);padding:3px;gap:2px;background:var(--surface-secondary);border-radius:10px}
-.segs label{position:relative;display:flex}
-.segs input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
-.segs span{display:flex;align-items:center;justify-content:center;min-width:52px;padding:0 10px;border-radius:8px;font-size:13.5px;font-weight:600;color:var(--text-secondary);transition:background var(--t),color var(--t),box-shadow var(--t)}
-.segs label:hover span{color:var(--text-primary)}
-.segs input:checked+span{background:var(--surface);color:var(--text-primary);box-shadow:var(--shadow-xs)}
-.segs input:focus-visible+span{outline:2px solid var(--accent);outline-offset:1px}
-.calc-out{margin-top:var(--s4);display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);padding:var(--s3) var(--s4);border-radius:var(--r-md);background:var(--background)}
-.calc-out small{display:block;font-size:12.5px;color:var(--text-secondary)}
-.calc-out output{display:block;font-size:20px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.disc{margin-top:var(--s3);font-size:12.5px;line-height:1.5;color:var(--text-tertiary)}
 
 /* =====================================================================
    WHY
@@ -635,10 +613,6 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
   .profile{padding:var(--s4)}
   .profile dl{margin-top:var(--s4)}
   .model-a,.model-b{padding:var(--s4) var(--s5)}
-  .calc summary{font-size:14px;gap:10px}
-  .calc-ctrls{gap:0 var(--s4)}
-  .calc-ctrls .fld-rate{flex-basis:100%}
-  .calc-out output{font-size:18px}
   .fcard{padding:var(--s5) var(--s4);border-radius:20px}
   .grid2{grid-template-columns:1fr}
   .grid2 .field+.field{margin-top:var(--s4)}
@@ -700,7 +674,6 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
     <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.5 3.3-5.5 6.5-5.5s5.9 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18.5 14.8c1.7.8 2.8 2.6 3 5.2"/></symbol>
     <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
     <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></symbol>
-    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5v3a1.8 1.8 0 01-2 1.8 17.8 17.8 0 01-7.8-2.8 17.5 17.5 0 01-5.4-5.4A17.8 17.8 0 013 5.2 1.8 1.8 0 014.8 3.3h3a1.8 1.8 0 011.8 1.5c.1.9.4 1.7.7 2.5a1.8 1.8 0 01-.4 1.9L8.6 10.5a14.4 14.4 0 005.4 5.4l1.3-1.3a1.8 1.8 0 011.9-.4c.8.3 1.6.6 2.5.7a1.8 1.8 0 011.3 1.6z"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></symbol>
     <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
@@ -881,35 +854,6 @@ textarea.inp{height:auto;min-height:96px;padding:12px 14px;resize:vertical;line-
     </div>
 
     <p class="pay-p" data-i18n="pay.p">Ustalamy jednorazową opłatę za usługę rekrutacyjną. Po zakończeniu rekrutacji OnlyStaff nie nalicza stałej prowizji od godzin pracy zatrudnionej osoby.</p>
-    <details class="calc" id="kalkulator">
-      <summary><svg class="i" aria-hidden="true"><use href="#i-calc"/></svg><span data-i18n="calc.toggle">Zobacz przykład kosztu marży godzinowej</span><svg class="i chev" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
-      <div class="calc-body">
-        <div class="calc-ctrls">
-          <div class="fld">
-            <label for="cW" data-i18n="calc.w">Liczba pracowników</label>
-            <div class="stepper"><button type="button" data-calc="cW:-1" data-i18n-aria="less" aria-label="Mniej"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button><input id="cW" type="number" inputmode="numeric" min="1" max="100" value="4"><button type="button" data-calc="cW:1" data-i18n-aria="more" aria-label="Więcej"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
-          </div>
-          <div class="fld">
-            <label for="cH" data-i18n="calc.hrs">Godziny / miesiąc</label>
-            <div class="stepper"><button type="button" data-calc="cH:-8" data-i18n-aria="less" aria-label="Mniej"><svg class="i" aria-hidden="true"><use href="#i-minus"/></svg></button><input id="cH" type="number" inputmode="numeric" min="8" max="300" value="160"><button type="button" data-calc="cH:8" data-i18n-aria="more" aria-label="Więcej"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
-          </div>
-          <div class="fld fld-rate">
-            <span class="lbl" id="cRl"><span data-i18n="calc.r">Przykładowa marża €/h</span> <em data-i18n="calc.rEx">(przykład kalkulacyjny)</em></span>
-            <div class="segs" role="radiogroup" aria-labelledby="cRl">
-              <label><input type="radio" name="cR" value="1"><span>1 €</span></label>
-              <label><input type="radio" name="cR" value="2" checked><span>2 €</span></label>
-              <label><input type="radio" name="cR" value="3"><span>3 €</span></label>
-              <label><input type="radio" name="cR" value="4"><span>4 €</span></label>
-            </div>
-          </div>
-        </div>
-        <div class="calc-out" aria-live="polite">
-          <div><small data-i18n="calc.m">Miesięcznie</small><output id="oM" for="cW cH">1 280 €</output></div>
-          <div><small data-i18n="calc.y">Rocznie</small><output id="oY" for="cW cH">15 360 €</output></div>
-        </div>
-        <p class="disc" data-i18n="calc.disc">To wyłącznie przykład matematyczny pokazujący mechanizm marży godzinowej. Rzeczywiste warunki ofert mogą się różnić.</p>
-      </div>
-    </details>
     </div>
     </div>
   </div>
@@ -1144,7 +1088,7 @@ const CONFIG = {
   privacyUrl: '/privacy.html',
   impressumUrl: '/impressum.html',
   cookiesUrl: '/privacy.html#cookies',
-  company: 'MBUD sp. z o.o., Ksawerów 3, 02-656 Warszawa, Polska · NIP 9522202055 · REGON 384966966 · KRS 0000815662',
+  company: 'Only Staff sp. z o.o., ul. Czyżówka 14/2.11, 30-526 Kraków, Polska · NIP 6793338977 · REGON 542465506 · KRS 0001189049',
   // Показывать "Отправка заявки не запускает платный рекрутинг" ТОЛЬКО если это соответствует процессу и договору.
   showNoObligationNote: true
 };
@@ -1240,9 +1184,6 @@ pl:{
  'pay.oneL':'Jednorazowa opłata','pay.oneS':'za rekrutację',
  'pay.zero':'0 € / h','pay.zeroL':'stałej prowizji OnlyStaff','pay.zeroS':'po zakończeniu rekrutacji',
  'pay.p':'Ustalamy jednorazową opłatę za usługę rekrutacyjną. Po zakończeniu rekrutacji OnlyStaff nie nalicza stałej prowizji od godzin pracy zatrudnionej osoby.',
- 'calc.toggle':'Zobacz przykład kosztu marży godzinowej','calc.w':'Liczba pracowników','calc.hrs':'Godziny / miesiąc','calc.r':'Przykładowa marża €/h','calc.rEx':'(przykład kalkulacyjny)',
- 'calc.m':'Miesięcznie','calc.y':'Rocznie',
- 'calc.disc':'To wyłącznie przykład matematyczny pokazujący mechanizm marży godzinowej. Rzeczywiste warunki ofert mogą się różnić.',
  'less':'Mniej','more':'Więcej','remove':'Usuń','qtyOf':'Liczba osób: {r}',
  'why.h':'Dlaczego OnlyStaff?',
  'why.1t':'Znamy branżę','why.1d':'Budowa, instalacje, metal i przemysł. Rozumiemy różnicę między Trockenbau a tynkowaniem oraz między WIG a MAG.',
@@ -1338,9 +1279,6 @@ ru:{
  'pay.oneL':'Разовая оплата','pay.oneS':'за подбор',
  'pay.zero':'0 € / ч','pay.zeroL':'постоянной почасовой комиссии OnlyStaff','pay.zeroS':'после завершения подбора',
  'pay.p':'Мы согласуем разовую оплату за услугу подбора. После завершения подбора OnlyStaff не начисляет постоянную комиссию за часы работы нанятого человека.',
- 'calc.toggle':'Посмотреть пример стоимости почасовой маржи','calc.w':'Количество работников','calc.hrs':'Часов в месяц','calc.r':'Условная маржа €/ч','calc.rEx':'(пример для расчёта)',
- 'calc.m':'В месяц','calc.y':'В год',
- 'calc.disc':'Это только математический пример, показывающий, как работает почасовая маржа. Реальные условия предложений могут отличаться.',
  'less':'Меньше','more':'Больше','remove':'Удалить','qtyOf':'Количество: {r}',
  'why.h':'Почему OnlyStaff?',
  'why.1t':'Знаем отрасль','why.1d':'Стройка, инженерные системы, металл и промышленность. Понимаем разницу между Trockenbau и штукатуркой, между WIG и MAG.',
@@ -1483,7 +1421,7 @@ function applyLang(l, user){
   const url = base() + '/' + l + '/';
   $('#canonical').href = url; $('#ogUrl').content = url;
   $('#hlPl').href = base()+'/pl/'; $('#hlRu').href = base()+'/ru/'; $('#hlDef').href = base()+'/pl/';
-  renderChips(); renderSpecs(); renderQuick(); renderRoles(); renderFaq(); renderConsent(); renderLd(); updateCalc(false); updateProg(); updateContacts(); updateSpecSel();
+  renderChips(); renderSpecs(); renderQuick(); renderRoles(); renderFaq(); renderConsent(); renderLd(); updateProg(); updateContacts(); updateSpecSel();
   try { localStorage.setItem('os_lang', l); } catch(e){}
   if (user){
     try {
@@ -1589,22 +1527,6 @@ if ('IntersectionObserver' in window){
   new IntersectionObserver(es => { formVis = es[0].isIntersecting; updSticky(); }).observe($('#zapotrzebowanie'));
   new IntersectionObserver(es => { finalVis = es[0].isIntersecting; updSticky(); }).observe($('.final'));
 }
-
-/* ================= CALCULATOR ================= */
-const fmt = n => new Intl.NumberFormat(LANG==='ru'?'ru-RU':'pl-PL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
-function clampInput(el){ const v = Math.round(+el.value||0); el.value = Math.min(+el.max, Math.max(+el.min, v)); }
-function updateCalc(user){
-  const w = Math.max(0,+$('#cW').value||0), h = Math.max(0,+$('#cH').value||0), r = +(($('input[name="cR"]:checked')||{}).value||0);
-  const m = w*h*r;
-  $('#oM').textContent = fmt(m); $('#oY').textContent = fmt(m*12);
-  if (user) trackOnce('cost_calculator_used', {workers:w, hours:h, rate:r});
-}
-$$('[data-calc]').forEach(b => b.addEventListener('click', () => {
-  const [id, d] = b.dataset.calc.split(':'); const el = document.getElementById(id);
-  el.value = (+el.value||0) + (+d); clampInput(el); updateCalc(true);
-}));
-['#cW','#cH'].forEach(s => { $(s).addEventListener('input', () => updateCalc(true)); $(s).addEventListener('change', e => { clampInput(e.target); updateCalc(true); }); });
-$$('input[name="cR"]').forEach(r => r.addEventListener('change', () => updateCalc(true)));
 
 /* ================= FORM ================= */
 const form = $('#leadForm');
@@ -1799,7 +1721,6 @@ $('#yr').textContent = new Date().getFullYear();
 initLang();
 initCookieConsent();
 show(1);
-if (matchMedia('(min-width:900px)').matches) $('#kalkulator').open = true;
 </script>
 </body>
 </html>
